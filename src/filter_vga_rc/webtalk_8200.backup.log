@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Mon Feb 27 17:34:26 2017
+# Process ID: 8200
+# Current directory: f:/ECE532/projects/test_bench_demo/image_filter_test_bench
+# Command line: wbtcv.exe -mode batch -source F:/ECE532/projects/test_bench_demo/image_filter_test_bench/.Xil/Vivado-8952-Qmyang-PC/PrjAr/_X_/image_filter_test_bench.hw/webtalk/labtool_webtalk.tcl -notrace
+# Log file: f:/ECE532/projects/test_bench_demo/image_filter_test_bench/webtalk.log
+# Journal file: f:/ECE532/projects/test_bench_demo/image_filter_test_bench\webtalk.jou
+#-----------------------------------------------------------
+source F:/ECE532/projects/test_bench_demo/image_filter_test_bench/.Xil/Vivado-8952-Qmyang-PC/PrjAr/_X_/image_filter_test_bench.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Feb 27 17:34:26 2017...

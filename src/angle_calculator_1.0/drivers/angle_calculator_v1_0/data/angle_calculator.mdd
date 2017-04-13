@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER angle_calculator
+	OPTION supported_peripherals = (angle_calculator);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = angle_calculator;
+END DRIVER

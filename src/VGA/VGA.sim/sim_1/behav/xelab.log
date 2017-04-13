@@ -1,0 +1,24 @@
+Vivado Simulator 2014.1
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.1/bin/unwrapped/win64.o/xelab.exe --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav --prj C:/Users/Amanjit/ECE532_git/VGA/VGA.sim/sim_1/behav/test.prj xil_defaultlib.test xil_defaultlib.glbl 
+Multi-threading is on. Using 6 slave threads.
+Determining compilation order of HDL files.
+INFO: [VRFC 10-165] Analyzing Verilog file "C:/Users/Amanjit/ECE532_git/VGA/VGA.srcs/sources_1/new/vga640x480.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga640x480
+INFO: [VRFC 10-165] Analyzing Verilog file "C:/Users/Amanjit/ECE532_git/VGA/VGA.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
+INFO: [VRFC 10-165] Analyzing Verilog file "C:/Xilinx/Vivado/2014.1/data/verilog/src/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "C:/Users/Amanjit/ECE532_git/VGA/VGA.srcs/sources_1/new/vga640x480.v" Line 21. Module vga640x480 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Xilinx/Vivado/2014.1/data/verilog/src/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Amanjit/ECE532_git/VGA/VGA.srcs/sources_1/new/vga640x480.v" Line 21. Module vga640x480 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Xilinx/Vivado/2014.1/data/verilog/src/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.vga640x480
+Compiling module xil_defaultlib.test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_behav

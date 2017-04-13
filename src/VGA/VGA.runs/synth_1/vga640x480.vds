@@ -1,0 +1,308 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Fri Mar 10 16:30:29 2017
+# Process ID: 5436
+# Current directory: F:/VGA/VGA.runs/synth_1
+# Command line: vivado.exe -log vga640x480.vds -mode batch -messageDb vivado.pb -notrace -source vga640x480.tcl
+# Log file: F:/VGA/VGA.runs/synth_1/vga640x480.vds
+# Journal file: F:/VGA/VGA.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source vga640x480.tcl -notrace
+Command: synth_design -top vga640x480 -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10312 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:19 . Memory (MB): peak = 307.277 ; gain = 99.398
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'vga640x480' [F:/VGA/VGA.srcs/sources_1/new/vga640x480.v:21]
+	Parameter hpixels bound to: 800 - type: integer 
+	Parameter vlines bound to: 521 - type: integer 
+	Parameter hpulse bound to: 96 - type: integer 
+	Parameter vpulse bound to: 2 - type: integer 
+	Parameter hbp bound to: 144 - type: integer 
+	Parameter hfp bound to: 784 - type: integer 
+	Parameter vbp bound to: 31 - type: integer 
+	Parameter vfp bound to: 511 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'vga640x480' (1#1) [F:/VGA/VGA.srcs/sources_1/new/vga640x480.v:21]
+WARNING: [Synth 8-3331] design vga640x480 has unconnected port pixel_data[31]
+WARNING: [Synth 8-3331] design vga640x480 has unconnected port pixel_data[30]
+WARNING: [Synth 8-3331] design vga640x480 has unconnected port pixel_data[29]
+WARNING: [Synth 8-3331] design vga640x480 has unconnected port pixel_data[28]
+WARNING: [Synth 8-3331] design vga640x480 has unconnected port pixel_data[27]
+WARNING: [Synth 8-3331] design vga640x480 has unconnected port pixel_data[26]
+WARNING: [Synth 8-3331] design vga640x480 has unconnected port pixel_data[25]
+WARNING: [Synth 8-3331] design vga640x480 has unconnected port pixel_data[24]
+WARNING: [Synth 8-3331] design vga640x480 has unconnected port pixel_data[19]
+WARNING: [Synth 8-3331] design vga640x480 has unconnected port pixel_data[18]
+WARNING: [Synth 8-3331] design vga640x480 has unconnected port pixel_data[17]
+WARNING: [Synth 8-3331] design vga640x480 has unconnected port pixel_data[16]
+WARNING: [Synth 8-3331] design vga640x480 has unconnected port pixel_data[11]
+WARNING: [Synth 8-3331] design vga640x480 has unconnected port pixel_data[10]
+WARNING: [Synth 8-3331] design vga640x480 has unconnected port pixel_data[9]
+WARNING: [Synth 8-3331] design vga640x480 has unconnected port pixel_data[8]
+WARNING: [Synth 8-3331] design vga640x480 has unconnected port pixel_data[3]
+WARNING: [Synth 8-3331] design vga640x480 has unconnected port pixel_data[2]
+WARNING: [Synth 8-3331] design vga640x480 has unconnected port pixel_data[1]
+WARNING: [Synth 8-3331] design vga640x480 has unconnected port pixel_data[0]
+WARNING: [Synth 8-3331] design vga640x480 has unconnected port tvalid
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 344.750 ; gain = 136.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:22 . Memory (MB): peak = 344.750 ; gain = 136.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:22 . Memory (MB): peak = 344.750 ; gain = 136.871
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:22 . Memory (MB): peak = 352.051 ; gain = 144.172
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 6     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module vga640x480 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 6     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:26 . Memory (MB): peak = 473.191 ; gain = 265.313
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design vga640x480 has unconnected port pixel_data[31]
+WARNING: [Synth 8-3331] design vga640x480 has unconnected port pixel_data[30]
+WARNING: [Synth 8-3331] design vga640x480 has unconnected port pixel_data[29]
+WARNING: [Synth 8-3331] design vga640x480 has unconnected port pixel_data[28]
+WARNING: [Synth 8-3331] design vga640x480 has unconnected port pixel_data[27]
+WARNING: [Synth 8-3331] design vga640x480 has unconnected port pixel_data[26]
+WARNING: [Synth 8-3331] design vga640x480 has unconnected port pixel_data[25]
+WARNING: [Synth 8-3331] design vga640x480 has unconnected port pixel_data[24]
+WARNING: [Synth 8-3331] design vga640x480 has unconnected port pixel_data[19]
+WARNING: [Synth 8-3331] design vga640x480 has unconnected port pixel_data[18]
+WARNING: [Synth 8-3331] design vga640x480 has unconnected port pixel_data[17]
+WARNING: [Synth 8-3331] design vga640x480 has unconnected port pixel_data[16]
+WARNING: [Synth 8-3331] design vga640x480 has unconnected port pixel_data[11]
+WARNING: [Synth 8-3331] design vga640x480 has unconnected port pixel_data[10]
+WARNING: [Synth 8-3331] design vga640x480 has unconnected port pixel_data[9]
+WARNING: [Synth 8-3331] design vga640x480 has unconnected port pixel_data[8]
+WARNING: [Synth 8-3331] design vga640x480 has unconnected port pixel_data[3]
+WARNING: [Synth 8-3331] design vga640x480 has unconnected port pixel_data[2]
+WARNING: [Synth 8-3331] design vga640x480 has unconnected port pixel_data[1]
+WARNING: [Synth 8-3331] design vga640x480 has unconnected port pixel_data[0]
+WARNING: [Synth 8-3331] design vga640x480 has unconnected port tvalid
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:26 . Memory (MB): peak = 474.238 ; gain = 266.359
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:26 . Memory (MB): peak = 474.238 ; gain = 266.359
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:26 . Memory (MB): peak = 494.871 ; gain = 286.992
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:26 . Memory (MB): peak = 494.871 ; gain = 286.992
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:26 . Memory (MB): peak = 494.871 ; gain = 286.992
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:26 . Memory (MB): peak = 494.871 ; gain = 286.992
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:26 . Memory (MB): peak = 494.871 ; gain = 286.992
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:26 . Memory (MB): peak = 494.871 ; gain = 286.992
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:27 . Memory (MB): peak = 494.871 ; gain = 286.992
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:27 . Memory (MB): peak = 494.871 ; gain = 286.992
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:27 . Memory (MB): peak = 494.871 ; gain = 286.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:27 . Memory (MB): peak = 494.871 ; gain = 286.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:27 . Memory (MB): peak = 494.871 ; gain = 286.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:27 . Memory (MB): peak = 494.871 ; gain = 286.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT1 |     3|
+|3     |LUT2 |     3|
+|4     |LUT3 |     6|
+|5     |LUT4 |     4|
+|6     |LUT5 |    13|
+|7     |LUT6 |    25|
+|8     |FDRE |    22|
+|9     |IBUF |    14|
+|10    |OBUF |    16|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   107|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:27 . Memory (MB): peak = 494.871 ; gain = 286.992
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 42 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 494.871 ; gain = 265.707
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:27 . Memory (MB): peak = 494.871 ; gain = 286.992
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 14 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+11 Infos, 42 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:28 . Memory (MB): peak = 558.094 ; gain = 332.324
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.249 . Memory (MB): peak = 558.094 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 10 16:31:14 2017...

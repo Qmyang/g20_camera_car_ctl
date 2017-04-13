@@ -1,0 +1,650 @@
+22:36:25 **** Build of project test_bsp ****
+make -k all 
+Running Make include in microblaze_0/libsrc/bram_v4_1/src
+make -C microblaze_0/libsrc/bram_v4_1/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in microblaze_0/libsrc/axivdma_v6_1/src
+make -C microblaze_0/libsrc/axivdma_v6_1/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in microblaze_0/libsrc/standalone_v5_5/src
+make -C microblaze_0/libsrc/standalone_v5_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in microblaze_0/libsrc/cpu_v2_5/src
+make -C microblaze_0/libsrc/cpu_v2_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Running Make libs in microblaze_0/libsrc/bram_v4_1/src
+make -C microblaze_0/libsrc/bram_v4_1/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Compiling bram
+mb-ar: creating ../../../lib/libxil.a
+Running Make libs in microblaze_0/libsrc/axivdma_v6_1/src
+make -C microblaze_0/libsrc/axivdma_v6_1/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Compiling axivdma
+Running Make libs in microblaze_0/libsrc/standalone_v5_5/src
+make -C microblaze_0/libsrc/standalone_v5_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Compiling standalone
+Running Make libs in microblaze_0/libsrc/cpu_v2_5/src
+make -C microblaze_0/libsrc/cpu_v2_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Compiling cpu
+Finished building libraries
+
+**** Build of configuration Debug for project test ****
+
+Nothing to build for project test
+22:36:44 **** Auto Build of configuration Debug for project test ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../test_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+/nfs/ug/cad/cad1/Xilinx/SDK/2016.2/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/5.2.0/../../../../microblaze-xilinx-elf/lib/le/crtinit.o: In function `_crtinit':
+(.text+0x78): undefined reference to `main'
+makefile:36: recipe for target 'test.elf' failed
+collect2: error: ld returned 1 exit status
+make: *** [test.elf] Error 1
+22:36:49 **** Auto Build of configuration Debug for project test ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../test_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:11:20: fatal error: rc_ctl.h: No such file or directory
+compilation terminated.
+make: *** [src/main.o] Error 1
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+22:37:47 **** Auto Build of configuration Debug for project test ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../test_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:11:20: fatal error: rc_ctl.h: No such file or directory
+compilation terminated.
+make: *** [src/main.o] Error 1
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+22:39:40 **** Auto Build of configuration Debug for project test ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../test_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:45:34: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+ volatile unsigned int *gpio_sw = 0x40000000;
+                                  ^
+../src/main.c: In function 'main':
+../src/main.c:75:31: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]
+  unsigned int (*fb_in)[640] = memptr;
+                               ^
+../src/main.c:85:32: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+  unsigned int (*fb_out)[640] = 0x81000000;
+                                ^
+../src/main.c:92:9: error: variable 'coords' has initializer but incomplete type
+  struct coordinate coords = {0};
+         ^
+../src/main.c:92:30: warning: excess elements in struct initializer
+  struct coordinate coords = {0};
+                              ^
+../src/main.c:92:30: note: (near initialization for 'coords')
+../src/main.c:92:20: error: storage size of 'coords' isn't known
+  struct coordinate coords = {0};
+                    ^
+../src/main.c:126:3: error: 'filter_ctl' undeclared (first use in this function)
+  *filter_ctl = 1;  //enable filter
+   ^
+../src/main.c:126:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:92:20: warning: unused variable 'coords' [-Wunused-variable]
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+  struct coordinate coords = {0};
+                    ^
+../src/main.c:91:6: warning: unused variable 'marker_size' [-Wunused-variable]
+  int marker_size = 0;
+      ^
+../src/main.c:90:10: warning: unused variable 'b' [-Wunused-variable]
+  int r,g,b;
+          ^
+../src/main.c:90:8: warning: unused variable 'g' [-Wunused-variable]
+  int r,g,b;
+        ^
+../src/main.c:90:6: warning: unused variable 'r' [-Wunused-variable]
+  int r,g,b;
+      ^
+../src/main.c:83:6: warning: unused variable 'state' [-Wunused-variable]
+  int state;
+      ^
+../src/main.c:82:17: warning: unused variable 'action' [-Wunused-variable]
+  struct Actions action;
+                 ^
+../src/main.c:81:6: warning: unused variable 'y_t' [-Wunused-variable]
+  int y_t = 24;
+      ^
+../src/main.c:80:6: warning: unused variable 'x_t' [-Wunused-variable]
+  int x_t = 32;
+      ^
+../src/main.c:79:6: warning: unused variable 'y_h' [-Wunused-variable]
+  int y_h = 48;
+      ^
+../src/main.c:78:6: warning: unused variable 'x_h' [-Wunused-variable]
+  int x_h = 64;
+      ^
+../src/main.c:77:6: warning: unused variable 'y_g' [-Wunused-variable]
+  int y_g = 0;
+      ^
+../src/main.c:76:6: warning: unused variable 'x_g' [-Wunused-variable]
+  int x_g = 32;
+      ^
+../src/main.c:74:25: warning: unused variable 'jj' [-Wunused-variable]
+  unsigned int i, j, ii, jj;
+                         ^
+../src/main.c:74:21: warning: unused variable 'ii' [-Wunused-variable]
+  unsigned int i, j, ii, jj;
+                     ^
+make: *** [src/main.o] Error 1
+22:40:26 **** Auto Build of configuration Debug for project test ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../test_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:45:34: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+ volatile unsigned int *gpio_sw = 0x40000000;
+                                  ^
+../src/main.c: In function 'main':
+../src/main.c:75:31: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]
+  unsigned int (*fb_in)[640] = memptr;
+                               ^
+../src/main.c:85:32: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+  unsigned int (*fb_out)[640] = 0x81000000;
+                                ^
+../src/main.c:91:6: warning: unused variable 'marker_size' [-Wunused-variable]
+  int marker_size = 0;
+      ^
+../src/main.c:90:10: warning: unused variable 'b' [-Wunused-variable]
+  int r,g,b;
+          ^
+../src/main.c:90:8: warning: unused variable 'g' [-Wunused-variable]
+  int r,g,b;
+        ^
+../src/main.c:90:6: warning: unused variable 'r' [-Wunused-variable]
+  int r,g,b;
+      ^
+../src/main.c:83:6: warning: unused variable 'state' [-Wunused-variable]
+  int state;
+      ^
+../src/main.c:82:17: warning: unused variable 'action' [-Wunused-variable]
+  struct Actions action;
+                 ^
+../src/main.c:81:6: warning: unused variable 'y_t' [-Wunused-variable]
+  int y_t = 24;
+      ^
+../src/main.c:80:6: warning: unused variable 'x_t' [-Wunused-variable]
+  int x_t = 32;
+      ^
+../src/main.c:79:6: warning: unused variable 'y_h' [-Wunused-variable]
+  int y_h = 48;
+      ^
+../src/main.c:78:6: warning: unused variable 'x_h' [-Wunused-variable]
+  int x_h = 64;
+      ^
+../src/main.c:77:6: warning: unused variable 'y_g' [-Wunused-variable]
+  int y_g = 0;
+      ^
+../src/main.c:76:6: warning: unused variable 'x_g' [-Wunused-variable]
+  int x_g = 32;
+      ^
+../src/main.c:74:25: warning: unused variable 'jj' [-Wunused-variable]
+  unsigned int i, j, ii, jj;
+                         ^
+../src/main.c:74:21: warning: unused variable 'ii' [-Wunused-variable]
+  unsigned int i, j, ii, jj;
+                     ^
+Finished building: ../src/main.c
+ 
+Building target: test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size test.elf  |tee "test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2736	    368	   3120	   6224	   1850	test.elf
+Finished building: test.elf.size
+ 
+22:40:48 **** Auto Build of configuration Debug for project test ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../test_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:45:34: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+ volatile unsigned int *gpio_sw = 0x40000000;
+                                  ^
+../src/main.c: In function 'main':
+../src/main.c:75:31: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]
+  unsigned int (*fb_in)[640] = memptr;
+                               ^
+../src/main.c:85:32: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+  unsigned int (*fb_out)[640] = 0x81000000;
+                                ^
+../src/main.c:91:6: warning: unused variable 'marker_size' [-Wunused-variable]
+  int marker_size = 0;
+      ^
+../src/main.c:90:10: warning: unused variable 'b' [-Wunused-variable]
+  int r,g,b;
+          ^
+../src/main.c:90:8: warning: unused variable 'g' [-Wunused-variable]
+  int r,g,b;
+        ^
+../src/main.c:90:6: warning: unused variable 'r' [-Wunused-variable]
+  int r,g,b;
+      ^
+../src/main.c:83:6: warning: unused variable 'state' [-Wunused-variable]
+  int state;
+      ^
+../src/main.c:82:17: warning: unused variable 'action' [-Wunused-variable]
+  struct Actions action;
+                 ^
+../src/main.c:81:6: warning: unused variable 'y_t' [-Wunused-variable]
+  int y_t = 24;
+      ^
+../src/main.c:80:6: warning: unused variable 'x_t' [-Wunused-variable]
+  int x_t = 32;
+      ^
+../src/main.c:79:6: warning: unused variable 'y_h' [-Wunused-variable]
+  int y_h = 48;
+      ^
+../src/main.c:78:6: warning: unused variable 'x_h' [-Wunused-variable]
+  int x_h = 64;
+      ^
+../src/main.c:77:6: warning: unused variable 'y_g' [-Wunused-variable]
+  int y_g = 0;
+      ^
+../src/main.c:76:6: warning: unused variable 'x_g' [-Wunused-variable]
+  int x_g = 32;
+      ^
+../src/main.c:74:25: warning: unused variable 'jj' [-Wunused-variable]
+  unsigned int i, j, ii, jj;
+                         ^
+../src/main.c:74:21: warning: unused variable 'ii' [-Wunused-variable]
+  unsigned int i, j, ii, jj;
+                     ^
+Finished building: ../src/main.c
+ 
+Building target: test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size test.elf  |tee "test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2656	    368	   3120	   6144	   1800	test.elf
+Finished building: test.elf.size
+ 
+22:40:56 **** Auto Build of configuration Debug for project test ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../test_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:45:34: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+ volatile unsigned int *gpio_sw = 0x40000000;
+                                  ^
+../src/main.c: In function 'main':
+../src/main.c:75:31: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]
+  unsigned int (*fb_in)[640] = memptr;
+                               ^
+../src/main.c:85:32: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+  unsigned int (*fb_out)[640] = 0x81000000;
+                                ^
+../src/main.c:91:6: warning: unused variable 'marker_size' [-Wunused-variable]
+  int marker_size = 0;
+      ^
+../src/main.c:90:10: warning: unused variable 'b' [-Wunused-variable]
+  int r,g,b;
+          ^
+../src/main.c:90:8: warning: unused variable 'g' [-Wunused-variable]
+  int r,g,b;
+        ^
+../src/main.c:90:6: warning: unused variable 'r' [-Wunused-variable]
+  int r,g,b;
+      ^
+../src/main.c:83:6: warning: unused variable 'state' [-Wunused-variable]
+  int state;
+      ^
+../src/main.c:82:17: warning: unused variable 'action' [-Wunused-variable]
+  struct Actions action;
+                 ^
+../src/main.c:81:6: warning: unused variable 'y_t' [-Wunused-variable]
+  int y_t = 24;
+      ^
+../src/main.c:80:6: warning: unused variable 'x_t' [-Wunused-variable]
+  int x_t = 32;
+      ^
+../src/main.c:79:6: warning: unused variable 'y_h' [-Wunused-variable]
+  int y_h = 48;
+      ^
+../src/main.c:78:6: warning: unused variable 'x_h' [-Wunused-variable]
+  int x_h = 64;
+      ^
+../src/main.c:77:6: warning: unused variable 'y_g' [-Wunused-variable]
+  int y_g = 0;
+      ^
+../src/main.c:76:6: warning: unused variable 'x_g' [-Wunused-variable]
+  int x_g = 32;
+      ^
+../src/main.c:74:25: warning: unused variable 'jj' [-Wunused-variable]
+  unsigned int i, j, ii, jj;
+                         ^
+../src/main.c:74:21: warning: unused variable 'ii' [-Wunused-variable]
+  unsigned int i, j, ii, jj;
+                     ^
+Finished building: ../src/main.c
+ 
+Building target: test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size test.elf  |tee "test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2656	    368	   3120	   6144	   1800	test.elf
+Finished building: test.elf.size
+ 
+22:41:04 **** Auto Build of configuration Debug for project test ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../test_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:45:34: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+ volatile unsigned int *gpio_sw = 0x40000000;
+                                  ^
+../src/main.c: In function 'main':
+../src/main.c:75:31: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]
+  unsigned int (*fb_in)[640] = memptr;
+                               ^
+../src/main.c:85:32: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+  unsigned int (*fb_out)[640] = 0x81000000;
+                                ^
+../src/main.c:91:6: warning: unused variable 'marker_size' [-Wunused-variable]
+  int marker_size = 0;
+      ^
+../src/main.c:90:10: warning: unused variable 'b' [-Wunused-variable]
+  int r,g,b;
+          ^
+../src/main.c:90:8: warning: unused variable 'g' [-Wunused-variable]
+  int r,g,b;
+        ^
+../src/main.c:90:6: warning: unused variable 'r' [-Wunused-variable]
+  int r,g,b;
+      ^
+../src/main.c:83:6: warning: unused variable 'state' [-Wunused-variable]
+  int state;
+      ^
+../src/main.c:82:17: warning: unused variable 'action' [-Wunused-variable]
+  struct Actions action;
+                 ^
+../src/main.c:81:6: warning: unused variable 'y_t' [-Wunused-variable]
+  int y_t = 24;
+      ^
+../src/main.c:80:6: warning: unused variable 'x_t' [-Wunused-variable]
+  int x_t = 32;
+      ^
+../src/main.c:79:6: warning: unused variable 'y_h' [-Wunused-variable]
+  int y_h = 48;
+      ^
+../src/main.c:78:6: warning: unused variable 'x_h' [-Wunused-variable]
+  int x_h = 64;
+      ^
+../src/main.c:77:6: warning: unused variable 'y_g' [-Wunused-variable]
+  int y_g = 0;
+      ^
+../src/main.c:76:6: warning: unused variable 'x_g' [-Wunused-variable]
+  int x_g = 32;
+      ^
+../src/main.c:74:25: warning: unused variable 'jj' [-Wunused-variable]
+  unsigned int i, j, ii, jj;
+                         ^
+../src/main.c:74:21: warning: unused variable 'ii' [-Wunused-variable]
+  unsigned int i, j, ii, jj;
+                     ^
+Finished building: ../src/main.c
+ 
+Building target: test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size test.elf  |tee "test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2656	    368	   3120	   6144	   1800	test.elf
+Finished building: test.elf.size
+ 
+22:41:30 **** Auto Build of configuration Debug for project test ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../test_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:41:34: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+ volatile unsigned int *gpio_sw = 0x40000000;
+                                  ^
+../src/main.c: In function 'main':
+../src/main.c:71:31: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]
+  unsigned int (*fb_in)[640] = memptr;
+                               ^
+../src/main.c:78:17: error: storage size of 'action' isn't known
+  struct Actions action;
+                 ^
+../src/main.c:81:32: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+  unsigned int (*fb_out)[640] = 0x81000000;
+                                ^
+../src/main.c:87:6: warning: unused variable 'marker_size' [-Wunused-variable]
+  int marker_size = 0;
+      ^
+../src/main.c:86:10: warning: unused variable 'b' [-Wunused-variable]
+  int r,g,b;
+          ^
+../src/main.c:86:8: warning: unused variable 'g' [-Wunused-variable]
+  int r,g,b;
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+        ^
+../src/main.c:86:6: warning: unused variable 'r' [-Wunused-variable]
+  int r,g,b;
+      ^
+../src/main.c:79:6: warning: unused variable 'state' [-Wunused-variable]
+  int state;
+      ^
+../src/main.c:78:17: warning: unused variable 'action' [-Wunused-variable]
+  struct Actions action;
+                 ^
+../src/main.c:77:6: warning: unused variable 'y_t' [-Wunused-variable]
+  int y_t = 24;
+      ^
+../src/main.c:76:6: warning: unused variable 'x_t' [-Wunused-variable]
+  int x_t = 32;
+      ^
+../src/main.c:75:6: warning: unused variable 'y_h' [-Wunused-variable]
+  int y_h = 48;
+      ^
+../src/main.c:74:6: warning: unused variable 'x_h' [-Wunused-variable]
+  int x_h = 64;
+      ^
+../src/main.c:73:6: warning: unused variable 'y_g' [-Wunused-variable]
+  int y_g = 0;
+      ^
+../src/main.c:72:6: warning: unused variable 'x_g' [-Wunused-variable]
+  int x_g = 32;
+      ^
+../src/main.c:70:25: warning: unused variable 'jj' [-Wunused-variable]
+  unsigned int i, j, ii, jj;
+                         ^
+../src/main.c:70:21: warning: unused variable 'ii' [-Wunused-variable]
+  unsigned int i, j, ii, jj;
+                     ^
+make: *** [src/main.o] Error 1
+22:41:52 **** Auto Build of configuration Debug for project test ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../test_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:41:34: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+ volatile unsigned int *gpio_sw = 0x40000000;
+                                  ^
+../src/main.c: In function 'main':
+../src/main.c:71:31: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]
+  unsigned int (*fb_in)[640] = memptr;
+                               ^
+../src/main.c:80:32: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+  unsigned int (*fb_out)[640] = 0x81000000;
+                                ^
+../src/main.c:86:6: warning: unused variable 'marker_size' [-Wunused-variable]
+  int marker_size = 0;
+      ^
+../src/main.c:85:10: warning: unused variable 'b' [-Wunused-variable]
+  int r,g,b;
+          ^
+../src/main.c:85:8: warning: unused variable 'g' [-Wunused-variable]
+  int r,g,b;
+        ^
+../src/main.c:85:6: warning: unused variable 'r' [-Wunused-variable]
+  int r,g,b;
+      ^
+../src/main.c:78:6: warning: unused variable 'state' [-Wunused-variable]
+  int state;
+      ^
+../src/main.c:77:6: warning: unused variable 'y_t' [-Wunused-variable]
+  int y_t = 24;
+      ^
+../src/main.c:76:6: warning: unused variable 'x_t' [-Wunused-variable]
+  int x_t = 32;
+      ^
+../src/main.c:75:6: warning: unused variable 'y_h' [-Wunused-variable]
+  int y_h = 48;
+      ^
+../src/main.c:74:6: warning: unused variable 'x_h' [-Wunused-variable]
+  int x_h = 64;
+      ^
+../src/main.c:73:6: warning: unused variable 'y_g' [-Wunused-variable]
+  int y_g = 0;
+      ^
+../src/main.c:72:6: warning: unused variable 'x_g' [-Wunused-variable]
+  int x_g = 32;
+      ^
+../src/main.c:70:25: warning: unused variable 'jj' [-Wunused-variable]
+  unsigned int i, j, ii, jj;
+                         ^
+../src/main.c:70:21: warning: unused variable 'ii' [-Wunused-variable]
+  unsigned int i, j, ii, jj;
+                     ^
+Finished building: ../src/main.c
+ 
+Building target: test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size test.elf  |tee "test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2656	    368	   3120	   6144	   1800	test.elf
+Finished building: test.elf.size
+ 
+22:43:07 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for 'all'.
+23:02:41 **** Clean-only build of project test_bsp ****
+make -k clean 
+rm -f microblaze_0/lib/libxil.a
+23:02:42 **** Clean-only build of configuration Debug for project test ****
+make clean 
+rm -rf  ./src/main.o  ./src/main.d  test.elf.size  test.elf
+ 
+23:02:42 **** Build of project test_bsp ****
+make -k all 
+Running Make include in microblaze_0/libsrc/bram_v4_1/src
+make -C microblaze_0/libsrc/bram_v4_1/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in microblaze_0/libsrc/axivdma_v6_1/src
+make -C microblaze_0/libsrc/axivdma_v6_1/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in microblaze_0/libsrc/standalone_v5_5/src
+make -C microblaze_0/libsrc/standalone_v5_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in microblaze_0/libsrc/cpu_v2_5/src
+make -C microblaze_0/libsrc/cpu_v2_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Running Make libs in microblaze_0/libsrc/bram_v4_1/src
+make -C microblaze_0/libsrc/bram_v4_1/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Compiling bram
+mb-ar: creating ../../../lib/libxil.a
+Running Make libs in microblaze_0/libsrc/axivdma_v6_1/src
+make -C microblaze_0/libsrc/axivdma_v6_1/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Compiling axivdma
+Running Make libs in microblaze_0/libsrc/standalone_v5_5/src
+make -C microblaze_0/libsrc/standalone_v5_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Compiling standalone
+Running Make libs in microblaze_0/libsrc/cpu_v2_5/src
+make -C microblaze_0/libsrc/cpu_v2_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Compiling cpu
+Finished building libraries
+23:02:47 **** Build of configuration Debug for project test ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../test_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:41:34: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+ volatile unsigned int *gpio_sw = 0x40000000;
+                                  ^
+../src/main.c: In function 'main':
+../src/main.c:71:31: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]
+  unsigned int (*fb_in)[640] = memptr;
+                               ^
+../src/main.c:80:32: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+  unsigned int (*fb_out)[640] = 0x81000000;
+                                ^
+../src/main.c:86:6: warning: unused variable 'marker_size' [-Wunused-variable]
+  int marker_size = 0;
+      ^
+../src/main.c:85:10: warning: unused variable 'b' [-Wunused-variable]
+  int r,g,b;
+          ^
+../src/main.c:85:8: warning: unused variable 'g' [-Wunused-variable]
+  int r,g,b;
+        ^
+../src/main.c:85:6: warning: unused variable 'r' [-Wunused-variable]
+  int r,g,b;
+      ^
+../src/main.c:78:6: warning: unused variable 'state' [-Wunused-variable]
+  int state;
+      ^
+../src/main.c:77:6: warning: unused variable 'y_t' [-Wunused-variable]
+  int y_t = 24;
+      ^
+../src/main.c:76:6: warning: unused variable 'x_t' [-Wunused-variable]
+  int x_t = 32;
+      ^
+../src/main.c:75:6: warning: unused variable 'y_h' [-Wunused-variable]
+  int y_h = 48;
+      ^
+../src/main.c:74:6: warning: unused variable 'x_h' [-Wunused-variable]
+  int x_h = 64;
+      ^
+../src/main.c:73:6: warning: unused variable 'y_g' [-Wunused-variable]
+  int y_g = 0;
+      ^
+../src/main.c:72:6: warning: unused variable 'x_g' [-Wunused-variable]
+  int x_g = 32;
+      ^
+../src/main.c:70:25: warning: unused variable 'jj' [-Wunused-variable]
+  unsigned int i, j, ii, jj;
+                         ^
+../src/main.c:70:21: warning: unused variable 'ii' [-Wunused-variable]
+  unsigned int i, j, ii, jj;
+                     ^
+Finished building: ../src/main.c
+ 
+Building target: test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size test.elf  |tee "test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2656	    368	   3120	   6144	   1800	test.elf
+Finished building: test.elf.size
+ 
+23:03:21 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for 'all'.

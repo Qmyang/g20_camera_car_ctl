@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Tue Mar 14 13:42:45 2017
+# Process ID: 6236
+# Current directory: F:/image_filter/image_filter.runs/synth_1
+# Command line: vivado.exe -log image_filter_top.vds -mode batch -messageDb vivado.pb -notrace -source image_filter_top.tcl
+# Log file: F:/image_filter/image_filter.runs/synth_1/image_filter_top.vds
+# Journal file: F:/image_filter/image_filter.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source image_filter_top.tcl -notrace

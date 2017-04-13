@@ -1,0 +1,24 @@
+22:35:48 INFO  : Launching XSDB server: xsdb -n -interactive /nfs/ug/homes-0/y/yangqiu/Desktop/fix_cam/worked_cam/worked_cam.sdk/temp_xsdb_launch_script.tcl
+22:35:50 INFO  : XSDB server has started successfully.
+22:35:50 INFO  : Processing command line option -hwspec /nfs/ug/homes-0/y/yangqiu/Desktop/fix_cam/worked_cam/worked_cam.sdk/design_1_wrapper.hdf.
+22:42:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:42:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:42:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645057A" && level==0} -index 0' command is executed.
+22:42:39 INFO  : FPGA configured successfully with bitstream "/nfs/ug/homes-0/y/yangqiu/Desktop/fix_cam/worked_cam/worked_cam.sdk/design_1_wrapper_hw_platform_0/download.bit"
+22:43:11 INFO  : Processor reset is completed for microblaze_0
+23:02:20 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1490324525000,  Project:1490322922000
+23:02:20 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at /nfs/ug/homes-0/y/yangqiu/Desktop/fix_cam/worked_cam/worked_cam.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+23:02:22 INFO  : Copied contents of /nfs/ug/homes-0/y/yangqiu/Desktop/fix_cam/worked_cam/worked_cam.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+23:02:22 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+23:02:40 INFO  : 
+23:02:41 INFO  : Updating hardware inferred compiler options for test.
+23:02:41 INFO  : Clearing existing target manager status.
+23:02:41 INFO  : Closing and re-opening the MSS file of ther project test_bsp
+23:02:41 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+23:02:42 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+23:03:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:03:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292645057A" && level==0} -index 0' command is executed.
+23:03:08 INFO  : FPGA configured successfully with bitstream "/nfs/ug/homes-0/y/yangqiu/Desktop/fix_cam/worked_cam/worked_cam.sdk/design_1_wrapper_hw_platform_0/download.bit"
+23:03:22 INFO  : Processor reset is completed for microblaze_0
+23:04:48 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# 
+# Start of session at: Mon Mar 20 23:22:22 2017
+# Process ID: 3068
+# Current directory: F:/filter_vga_rc/image_filter_test_bench.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: F:/filter_vga_rc/image_filter_test_bench.sdk/webtalk/webtalk.log
+# Journal file: F:/filter_vga_rc/image_filter_test_bench.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

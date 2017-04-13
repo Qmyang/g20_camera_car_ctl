@@ -1,0 +1,402 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Fri Mar 10 15:59:34 2017
+# Process ID: 8608
+# Current directory: F:/VGA
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5404 F:\VGA\VGA.xpr
+# Log file: F:/VGA/vivado.log
+# Journal file: F:/VGA\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/image_filter_no_cam_debug/image_filter_test_bench.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/image_filter'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'f:/image_filter' may become invalid. A better location for the repostory would be in a path adjacent to the project. (Current project location is 'f:/image_filter_no_cam_debug'.)
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/test_cam'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/ECE532/projects/VGA'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/ECE532/Vivado/2016.2/data/ip'.
+open_project: Time (s): cpu = 00:00:29 ; elapsed = 00:00:18 . Memory (MB): peak = 997.672 ; gain = 344.301
+update_compile_order -fileset sources_1
+open_bd_design {F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/design_1.bd}
+Adding cell -- xilinx.com:ip:microblaze:9.6 - microblaze_0
+Adding cell -- xilinx.com:ip:mdm:3.2 - mdm_1
+Adding cell -- xilinx.com:ip:clk_wiz:5.3 - clk_wiz_1
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_1_100M
+Adding cell -- xilinx.com:ip:mig_7series:4.0 - mig_7series_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_mig_7series_0_81M
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding cell -- xilinx.com:ip:axis_data_fifo:1.1 - axis_data_fifo_1
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding cell -- xilinx.com:user:image_filter:2.0 - image_filter_0
+Adding cell -- user:user:vga640x480:1.0 - vga640x480_0
+Adding cell -- xilinx.com:ip:axis_data_fifo:1.1 - axis_data_fifo_2
+Adding cell -- xilinx.com:ip:axi_vdma:6.2 - axi_vdma_0
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
+Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.3 - lmb_bram
+Excluding </axi_gpio_0/S_AXI/Reg> from </axi_vdma_0/Data_MM2S>
+Excluding </axi_vdma_0/S_AXI_LITE/Reg> from </axi_vdma_0/Data_MM2S>
+Excluding </image_filter_0/S00_AXI/S00_AXI_reg> from </axi_vdma_0/Data_MM2S>
+Successfully read diagram <design_1> from BD file <F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 997.883 ; gain = 0.211
+set_property  ip_repo_paths  {f:/image_filter f:/test_cam} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/image_filter'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'f:/image_filter' may become invalid. A better location for the repostory would be in a path adjacent to the project. (Current project location is 'f:/image_filter_no_cam_debug'.)
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/test_cam'.
+set_property  ip_repo_paths  {f:/image_filter F:/VGA f:/test_cam} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/image_filter'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'f:/image_filter' may become invalid. A better location for the repostory would be in a path adjacent to the project. (Current project location is 'f:/image_filter_no_cam_debug'.)
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/VGA'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/test_cam'.
+report_ip_status -name ip_status 
+export_ip_user_files -of_objects [get_ips  design_1_vga640x480_0_0] -no_script -reset -quiet
+upgrade_ip -vlnv user:user:vga640x480:1.0 [get_ips  design_1_vga640x480_0_0] -log ip_upgrade.log
+Upgrading 'F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3422] Upgraded design_1_vga640x480_0_0 (vga640x480_v1_0 1.0) from revision 2 to revision 3
+Wrote  : <F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/design_1.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'F:/image_filter_no_cam_debug/ip_upgrade.log'.
+generate_target all [get_files  F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Verilog Output written to : F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/hdl/design_1.v
+Verilog Output written to : F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+Wrote  : <F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/design_1.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_1_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mig_7series_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_mig_7series_0_81M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axis_data_fifo_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block image_filter_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block vga640x480_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axis_data_fifo_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_vdma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m00_couplers/auto_cc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m01_couplers/auto_ds .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m01_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m02_couplers/auto_ds .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m02_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m04_couplers/auto_ds .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m04_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/auto_us .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s01_couplers/auto_us .
+Exporting to file F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/hdl/design_1.hwdef
+generate_target: Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 1353.391 ; gain = 274.219
+export_ip_user_files -of_objects [get_files F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/design_1.bd] -no_script -force -quiet
+export_simulation -of_objects [get_files F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/design_1.bd] -directory F:/image_filter_no_cam_debug/image_filter_test_bench.ip_user_files/sim_scripts -ip_user_files_dir F:/image_filter_no_cam_debug/image_filter_test_bench.ip_user_files -ipstatic_source_dir F:/image_filter_no_cam_debug/image_filter_test_bench.ip_user_files/ipstatic -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Mar 10 16:12:15 2017] Launched synth_1...
+Run output will be captured here: F:/image_filter_no_cam_debug/image_filter_test_bench.runs/synth_1/runme.log
+[Fri Mar 10 16:12:15 2017] Launched impl_1...
+Run output will be captured here: F:/image_filter_no_cam_debug/image_filter_test_bench.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 1397.113 ; gain = 0.000
+reset_run synth_1
+report_ip_status -name ip_status 
+set_property  ip_repo_paths  {f:/image_filter f:/test_cam} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/image_filter'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'f:/image_filter' may become invalid. A better location for the repostory would be in a path adjacent to the project. (Current project location is 'f:/image_filter_no_cam_debug'.)
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/test_cam'.
+set_property  ip_repo_paths  {f:/image_filter f:/test_cam F:/VGA} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/image_filter'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'f:/image_filter' may become invalid. A better location for the repostory would be in a path adjacent to the project. (Current project location is 'f:/image_filter_no_cam_debug'.)
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/test_cam'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/VGA'.
+report_ip_status -name ip_status 
+startgroup
+create_bd_cell -type ip -vlnv user:user:vga640x480:1.0 vga640x480_1
+endgroup
+delete_bd_objs [get_bd_nets axis_data_fifo_2_m_axis_tvalid] [get_bd_nets vga640x480_0_fsync] [get_bd_nets axis_data_fifo_2_m_axis_tdata] [get_bd_nets vga640x480_0_hsync] [get_bd_nets vga640x480_0_vsync] [get_bd_nets vga640x480_0_red] [get_bd_nets vga640x480_0_green] [get_bd_nets vga640x480_0_blue] [get_bd_nets vga640x480_0_tready] [get_bd_cells vga640x480_0]
+delete_bd_objs [get_bd_cells vga640x480_1]
+set_property  ip_repo_paths  {f:/image_filter f:/test_cam} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/image_filter'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'f:/image_filter' may become invalid. A better location for the repostory would be in a path adjacent to the project. (Current project location is 'f:/image_filter_no_cam_debug'.)
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/test_cam'.
+set_property  ip_repo_paths  {f:/image_filter F:/VGA f:/test_cam} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/image_filter'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'f:/image_filter' may become invalid. A better location for the repostory would be in a path adjacent to the project. (Current project location is 'f:/image_filter_no_cam_debug'.)
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/VGA'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/test_cam'.
+startgroup
+create_bd_cell -type ip -vlnv user:user:vga640x480:1.0 vga640x480_0
+endgroup
+set_property location {5 2373 1703} [get_bd_cells vga640x480_0]
+set_property location {5 2369 1640} [get_bd_cells vga640x480_0]
+connect_bd_net [get_bd_pins vga640x480_0/fsync] [get_bd_pins axi_vdma_0/mm2s_fsync]
+connect_bd_net [get_bd_pins vga640x480_0/clk25] [get_bd_pins clk_wiz_1/clk_out3]
+connect_bd_net [get_bd_pins vga640x480_0/aresetn] [get_bd_pins axis_data_fifo_2/m_axis_aresetn]
+connect_bd_net [get_bd_pins vga640x480_0/pixel_data] [get_bd_pins axis_data_fifo_2/m_axis_tdata]
+WARNING: [BD 41-1306] The connection to interface pin /axis_data_fifo_2/m_axis_tdata is being overridden by the user. This pin will not be connected as a part of interface connection M_AXIS
+connect_bd_net [get_bd_pins axis_data_fifo_2/m_axis_tready] [get_bd_pins vga640x480_0/tready]
+WARNING: [BD 41-1306] The connection to interface pin /axis_data_fifo_2/m_axis_tready is being overridden by the user. This pin will not be connected as a part of interface connection M_AXIS
+connect_bd_net [get_bd_pins axis_data_fifo_2/m_axis_tvalid] [get_bd_pins vga640x480_0/tvalid]
+WARNING: [BD 41-1306] The connection to interface pin /axis_data_fifo_2/m_axis_tvalid is being overridden by the user. This pin will not be connected as a part of interface connection M_AXIS
+make_wrapper -files [get_files F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/design_1.bd] -top
+Verilog Output written to : F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/hdl/design_1.v
+Verilog Output written to : F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+Wrote  : <F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/design_1.bd> 
+make_wrapper: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1397.113 ; gain = 0.000
+connect_bd_net [get_bd_ports hsync] [get_bd_pins vga640x480_0/hsync]
+connect_bd_net [get_bd_ports vsync] [get_bd_pins vga640x480_0/vsync]
+connect_bd_net [get_bd_ports red] [get_bd_pins vga640x480_0/tready]
+disconnect_bd_net /vga640x480_0_tready [get_bd_ports red]
+connect_bd_net [get_bd_ports red] [get_bd_pins vga640x480_0/red]
+connect_bd_net [get_bd_ports green] [get_bd_pins vga640x480_0/green]
+connect_bd_net [get_bd_ports blue] [get_bd_pins vga640x480_0/blue]
+make_wrapper -files [get_files F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/design_1.bd] -top
+Verilog Output written to : F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/hdl/design_1.v
+Verilog Output written to : F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+Wrote  : <F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/design_1.bd> 
+make_wrapper: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1420.625 ; gain = 0.000
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/image_filter'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'f:/image_filter' may become invalid. A better location for the repostory would be in a path adjacent to the project. (Current project location is 'f:/image_filter_no_cam_debug'.)
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/VGA'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/test_cam'.
+report_ip_status -name ip_status 
+set_property  ip_repo_paths  {f:/image_filter f:/test_cam} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/image_filter'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'f:/image_filter' may become invalid. A better location for the repostory would be in a path adjacent to the project. (Current project location is 'f:/image_filter_no_cam_debug'.)
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/test_cam'.
+set_property  ip_repo_paths  {f:/image_filter f:/test_cam F:/VGA} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/image_filter'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'f:/image_filter' may become invalid. A better location for the repostory would be in a path adjacent to the project. (Current project location is 'f:/image_filter_no_cam_debug'.)
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/test_cam'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/VGA'.
+ipx::edit_ip_in_project -upgrade true -name vga640x480_v1_0_v1_0_project -directory F:/image_filter_no_cam_debug/image_filter_test_bench.tmp/vga640x480_v1_0_v1_0_project f:/VGA/VGA.srcs/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'f:/image_filter_no_cam_debug/image_filter_test_bench.tmp/vga640x480_v1_0_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/ECE532/Vivado/2016.2/data/ip'.
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1428.293 ; gain = 0.000
+ERROR: [Board 49-71] The board_part definition was not found for digilentinc.com:nexys4_ddr:1.1. The project's board_part property was not set, but the project's part property was set to xc7a100tcsg324-1. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command. Check if board.repoPaths parameter is set and the board_part is installed from the tcl app store.
+close_project
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source f:/image_filter_no_cam_debug/image_filter_test_bench.tmp/vga640x480_v1_0_v1_0_project/vga640x480_v1_0_v1_0_project.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Mar 10 16:42:24 2017...
+close_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1439.695 ; gain = 0.000
+report_ip_status -name ip_status 
+startgroup
+create_bd_cell -type ip -vlnv user:user:vga640x480:1.0 vga640x480_1
+endgroup
+delete_bd_objs [get_bd_cells vga640x480_1]
+reset_target all [get_files  F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/design_1.bd]
+reset_target: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1439.695 ; gain = 0.000
+export_ip_user_files -of_objects  [get_files  F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/design_1.bd] -sync -no_script -force -quiet
+delete_bd_objs [get_bd_ports dout_1]
+set_property HDL_ATTRIBUTE.MARK_DEBUG true [get_bd_nets {vga640x480_0_fsync }]
+true
+set_property HDL_ATTRIBUTE.MARK_DEBUG true [get_bd_nets {axis_data_fifo_2_m_axis_tdata }]
+true
+reset_target all [get_files  F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects  [get_files  F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/design_1.bd] -sync -no_script -force -quiet
+make_wrapper -files [get_files F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/design_1.bd] -top
+WARNING: [BD 41-1634] Updates have been made to one or more nets marked for debug. It is required to open the synthesized design and use the Set Up Debug wizard to insert, modify or delete Debug Cores. Failure to do so could result in critical warnings and errors in the implementation flow. 
+Verilog Output written to : F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/hdl/design_1.v
+Verilog Output written to : F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+Wrote  : <F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/design_1.bd> 
+make_wrapper: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1450.715 ; gain = 11.020
+generate_target all [get_files  F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+Verilog Output written to : F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/hdl/design_1.v
+Verilog Output written to : F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+Wrote  : <F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/design_1.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_1_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mig_7series_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_mig_7series_0_81M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axis_data_fifo_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block image_filter_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axis_data_fifo_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_vdma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block vga640x480_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m00_couplers/auto_cc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m01_couplers/auto_ds .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m01_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m02_couplers/auto_ds .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m02_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m04_couplers/auto_ds .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m04_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/auto_us .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s01_couplers/auto_us .
+Exporting to file F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/hdl/design_1.hwdef
+generate_target: Time (s): cpu = 00:00:16 ; elapsed = 00:02:06 . Memory (MB): peak = 1505.727 ; gain = 55.012
+export_ip_user_files -of_objects [get_files F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/design_1.bd] -no_script -force -quiet
+export_simulation -of_objects [get_files F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/design_1.bd] -directory F:/image_filter_no_cam_debug/image_filter_test_bench.ip_user_files/sim_scripts -ip_user_files_dir F:/image_filter_no_cam_debug/image_filter_test_bench.ip_user_files -ipstatic_source_dir F:/image_filter_no_cam_debug/image_filter_test_bench.ip_user_files/ipstatic -force -quiet
+startgroup
+set_property -dict [list CONFIG.vfp {79} CONFIG.hfp {208}] [get_bd_cells vga640x480_0]
+endgroup
+make_wrapper -files [get_files F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/design_1.bd] -top
+WARNING: [BD 41-1634] Updates have been made to one or more nets marked for debug. It is required to open the synthesized design and use the Set Up Debug wizard to insert, modify or delete Debug Cores. Failure to do so could result in critical warnings and errors in the implementation flow. 
+Verilog Output written to : F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/hdl/design_1.v
+Verilog Output written to : F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+Wrote  : <F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/design_1.bd> 
+make_wrapper: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1505.727 ; gain = 0.000
+save_bd_design
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+Verilog Output written to : F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/hdl/design_1.v
+Verilog Output written to : F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+Wrote  : <F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/design_1.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_1_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mig_7series_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_mig_7series_0_81M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axis_data_fifo_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block image_filter_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axis_data_fifo_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_vdma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block vga640x480_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m00_couplers/auto_cc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m01_couplers/auto_ds .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m01_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m02_couplers/auto_ds .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m02_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m04_couplers/auto_ds .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m04_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/auto_us .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s01_couplers/auto_us .
+Exporting to file F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/hdl/design_1.hwdef
+[Fri Mar 10 16:50:42 2017] Launched synth_1...
+Run output will be captured here: F:/image_filter_no_cam_debug/image_filter_test_bench.runs/synth_1/runme.log
+[Fri Mar 10 16:50:42 2017] Launched impl_1...
+Run output will be captured here: F:/image_filter_no_cam_debug/image_filter_test_bench.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:10 ; elapsed = 00:00:21 . Memory (MB): peak = 1560.281 ; gain = 54.555
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+startgroup
+endgroup
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/image_filter'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'f:/image_filter' may become invalid. A better location for the repostory would be in a path adjacent to the project. (Current project location is 'f:/image_filter_no_cam_debug'.)
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/test_cam'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/VGA'.
+update_ip_catalog: Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1560.281 ; gain = 0.000
+report_ip_status -name ip_status
+export_ip_user_files -of_objects [get_ips  design_1_vga640x480_0_1] -no_script -reset -quiet
+upgrade_ip -vlnv user:user:vga640x480:1.0 [get_ips  design_1_vga640x480_0_1] -log ip_upgrade.log
+Upgrading 'F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3422] Upgraded design_1_vga640x480_0_1 (vga640x480_v1_0 1.0) from revision 3 to revision 4
+Wrote  : <F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/design_1.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'F:/image_filter_no_cam_debug/ip_upgrade.log'.
+generate_target all [get_files  F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/design_1.bd]
+WARNING: [BD 41-1634] Updates have been made to one or more nets marked for debug. It is required to open the synthesized design and use the Set Up Debug wizard to insert, modify or delete Debug Cores. Failure to do so could result in critical warnings and errors in the implementation flow. 
+Verilog Output written to : F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/hdl/design_1.v
+Verilog Output written to : F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+Wrote  : <F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/design_1.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_1_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mig_7series_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_mig_7series_0_81M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axis_data_fifo_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block image_filter_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axis_data_fifo_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_vdma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block vga640x480_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m00_couplers/auto_cc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m01_couplers/auto_ds .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m01_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m02_couplers/auto_ds .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m02_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m04_couplers/auto_ds .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m04_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/auto_us .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s01_couplers/auto_us .
+Exporting to file F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/hdl/design_1.hwdef
+generate_target: Time (s): cpu = 00:00:19 ; elapsed = 00:00:50 . Memory (MB): peak = 1608.863 ; gain = 23.555
+export_ip_user_files -of_objects [get_files F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/design_1.bd] -no_script -force -quiet
+export_simulation -of_objects [get_files F:/image_filter_no_cam_debug/image_filter_test_bench.srcs/sources_1/bd/design_1/design_1.bd] -directory F:/image_filter_no_cam_debug/image_filter_test_bench.ip_user_files/sim_scripts -ip_user_files_dir F:/image_filter_no_cam_debug/image_filter_test_bench.ip_user_files -ipstatic_source_dir F:/image_filter_no_cam_debug/image_filter_test_bench.ip_user_files/ipstatic -force -quiet
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 10 19:01:48 2017...

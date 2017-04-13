@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# updatemem v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# 
+# Start of session at: Fri Mar 24 16:48:10 2017
+# Process ID: 5256
+# Current directory: c:/Users/chenya26/fix_cam/filter_vga_rc
+# Command line: updatemem.exe -mode batch -source C:/Xilinx/SDK/2016.2/scripts/updatemem/main.tcl -notrace -tclargs -meminfo C:/Users/chenya26/fix_cam/filter_vga_rc/image_filter_test_bench.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.mmi -data C:/Xilinx/SDK/2016.2/data/embeddedsw/lib/microblaze/mb_bootloop_le.elf -proc design_1_i/microblaze_0 -bit C:/Users/chenya26/fix_cam/filter_vga_rc/image_filter_test_bench.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit -out C:/Users/chenya26/fix_cam/filter_vga_rc/image_filter_test_bench.sdk/design_1_wrapper_hw_platform_0/download.bit -force
+# Log file: c:/Users/chenya26/fix_cam/filter_vga_rc/updatemem.log
+# Journal file: c:/Users/chenya26/fix_cam/filter_vga_rc\updatemem.jou
+#-----------------------------------------------------------
+source C:/Xilinx/SDK/2016.2/scripts/updatemem/main.tcl -notrace
+Loading bitfile C:/Users/chenya26/fix_cam/filter_vga_rc/image_filter_test_bench.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+Loading data files...
+Updating memory content...
+Creating bitstream...
+Writing bitstream C:/Users/chenya26/fix_cam/filter_vga_rc/image_filter_test_bench.sdk/design_1_wrapper_hw_platform_0/download.bit...
+update_mem: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 472.316 ; gain = 420.938
+INFO: [Common 17-206] Exiting updatemem at Fri Mar 24 16:48:20 2017...

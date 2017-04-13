@@ -1,0 +1,69 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Sun Feb 26 21:33:41 2017
+# Process ID: 7084
+# Current directory: F:/ECE532/projects/test_bench_demo/image_filter
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11428 F:\ECE532\projects\test_bench_demo\image_filter\image_filter.xpr
+# Log file: F:/ECE532/projects/test_bench_demo/image_filter/vivado.log
+# Journal file: F:/ECE532/projects/test_bench_demo/image_filter\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/ECE532/projects/test_bench_demo/image_filter/image_filter.xpr
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open F:/ECE532/projects/test_bench_demo/image_filter/image_filter.srcs/sim_1/new/image_filter_tb.v w ]
+add_files -fileset sim_1 F:/ECE532/projects/test_bench_demo/image_filter/image_filter.srcs/sim_1/new/image_filter_tb.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+source image_filter_tb.tcl
+close_sim
+launch_simulation
+source image_filter_tb.tcl
+restart
+run all
+close_sim
+launch_simulation
+source image_filter_tb.tcl
+restart
+run all
+close_sim
+launch_simulation
+source image_filter_tb.tcl
+restart
+run all
+pwd
+close_sim
+launch_simulation
+source image_filter_tb.tcl
+restart
+run all
+close_sim
+launch_simulation
+launch_simulation
+source image_filter_tb.tcl
+restart
+run all
+close_sim
+launch_simulation
+source image_filter_tb.tcl
+restart
+run all
+close_sim
+set_property -name {xsim.simulate.runtime} -value {10000000ns} -objects [get_filesets sim_1]
+launch_simulation
+source image_filter_tb.tcl
+close_sim
+launch_simulation
+source image_filter_tb.tcl
+restart
+run 10000000 us
+close_sim
+launch_simulation
+source image_filter_tb.tcl
+restart
+run all
+close_sim

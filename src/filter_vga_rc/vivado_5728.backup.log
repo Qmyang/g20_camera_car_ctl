@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Fri Mar 17 16:39:58 2017
+# Process ID: 5728
+# Current directory: F:/image_filter_with_vga
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5576 F:\image_filter_with_vga\image_filter_test_bench.xpr
+# Log file: F:/image_filter_with_vga/vivado.log
+# Journal file: F:/image_filter_with_vga\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/image_filter_with_vga/image_filter_test_bench.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/test_cam'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/image_filter'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'f:/image_filter' may become invalid. A better location for the repostory would be in a path adjacent to the project. (Current project location is 'f:/image_filter_with_vga'.)
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/VGA'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/ECE532/Vivado/2016.2/data/ip'.
+open_project: Time (s): cpu = 00:00:40 ; elapsed = 00:01:09 . Memory (MB): peak = 1017.988 ; gain = 412.211
+update_compile_order -fileset sources_1
+launch_sdk -workspace F:/image_filter_with_vga/image_filter_test_bench.sdk -hwspec F:/image_filter_with_vga/image_filter_test_bench.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace F:/image_filter_with_vga/image_filter_test_bench.sdk -hwspec F:/image_filter_with_vga/image_filter_test_bench.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 17 22:14:12 2017...

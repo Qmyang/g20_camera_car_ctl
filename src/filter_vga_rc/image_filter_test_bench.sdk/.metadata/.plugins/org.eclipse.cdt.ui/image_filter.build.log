@@ -1,0 +1,6 @@
+16:37:22 **** Incremental Build of configuration Debug for project image_filter ****
+make all 
+make: Nothing to be done for `all'.
+
+16:37:22 Build Finished (took 78ms)
+

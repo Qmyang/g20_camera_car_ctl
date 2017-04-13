@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file F:\image_filter_no_cam_debug\image_filter_test_bench.runs\synth_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: Permission denied

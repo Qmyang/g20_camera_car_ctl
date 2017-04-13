@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Fri Mar 17 13:42:00 2017
+# Process ID: 9160
+# Current directory: F:/image_filter
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6964 F:\image_filter\image_filter.xpr
+# Log file: F:/image_filter/vivado.log
+# Journal file: F:/image_filter\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/image_filter/image_filter.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/image_filter/image_filter.srcs'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/ECE532/Vivado/2016.2/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:22 . Memory (MB): peak = 772.340 ; gain = 146.164
+update_compile_order -fileset sources_1
+close_project
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source F:/image_filter/image_filter.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Mar 17 13:45:19 2017...
+close_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 772.340 ; gain = 0.000
+open_project F:/image_filter_with_vga/image_filter_test_bench.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/test_cam'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/image_filter'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'f:/image_filter' may become invalid. A better location for the repostory would be in a path adjacent to the project. (Current project location is 'f:/image_filter_with_vga'.)
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/VGA'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/ECE532/Vivado/2016.2/data/ip'.
+open_project: Time (s): cpu = 00:00:31 ; elapsed = 00:00:52 . Memory (MB): peak = 1069.121 ; gain = 296.781
+update_compile_order -fileset sources_1
+launch_sdk -workspace F:/image_filter_with_vga/image_filter_test_bench.sdk -hwspec F:/image_filter_with_vga/image_filter_test_bench.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace F:/image_filter_with_vga/image_filter_test_bench.sdk -hwspec F:/image_filter_with_vga/image_filter_test_bench.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.

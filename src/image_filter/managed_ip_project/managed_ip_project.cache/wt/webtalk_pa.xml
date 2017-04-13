@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Wed Mar 15 18:11:42 2017">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="7b7e6f4fac05498e99c911014508538d" type="ProjectID"/>
+<property name="ProjectIteration" value="1" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="AutoConnectTarget" value="2" type="JavaHandler"/>
+<property name="CloseProject" value="6" type="JavaHandler"/>
+<property name="CustomizeRSBBlock" value="1" type="JavaHandler"/>
+<property name="EditInIPPackagerHandler" value="2" type="JavaHandler"/>
+<property name="IPPackagerHandler" value="1" type="JavaHandler"/>
+<property name="NewLaunchHardware" value="1" type="JavaHandler"/>
+<property name="NewProject" value="1" type="JavaHandler"/>
+<property name="OpenBlockDesign" value="2" type="JavaHandler"/>
+<property name="OpenHardwareManager" value="3" type="JavaHandler"/>
+<property name="OpenIPLocationHandler" value="2" type="JavaHandler"/>
+<property name="OpenProject" value="2" type="JavaHandler"/>
+<property name="OpenRecentTarget" value="3" type="JavaHandler"/>
+<property name="RefreshDevice" value="2" type="JavaHandler"/>
+<property name="RunTrigger" value="7" type="JavaHandler"/>
+<property name="SaveRSBDesign" value="1" type="JavaHandler"/>
+<property name="StopTrigger" value="3" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="PAResourceAtoD.AddIlaProbesPopup_CANCEL, Cancel" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.AddIlaProbesPopup_OK, OK" value="5" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CmdMsgDialog_OK, OK" value="2" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CoreAndInterfacesBaseTreeTablePanel_REFRESH_ALL_REPOSITORIES, Refresh All Repositories" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, Communication  Networking ;  ;  ;  ; , 12, Communication  Networking, 0, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, Embedded Processing ;  ;  ;  ; , 15, Embedded Processing, 0, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, User Repository ;  ;  ;  ; , 0, User Repository, 0, false" value="2" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, User Repository ;  ;  ;  ; , 0, User Repository, 0, false, false, false, false, true, false" value="2" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, User Repository ;  ;  ;  ; , 6, User Repository, 0, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, UserIP ;  ;  ;  ; , 3" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, image_filter_top_v1_0 ; AXI4-Stream ; Production ; Included ; xilinx.com:user:image_filter_top:1.0, 4, image_filter_top_v1_0, 0, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, image_filter_v2_0_v1_0 ; AXI4, AXI4-Stream ; Production ; Included ; xilinx.com:user:image_filter_v2_0:1.0, 5, image_filter_v2_0_v1_0, 0, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, image_filter_v2_0_v1_0 ; AXI4, AXI4-Stream ; Production ; Included ; xilinx.com:user:image_filter_v2_0:1.0, 5, image_filter_v2_0_v1_0, 0, true, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, Auto Connect" value="2" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER, Edit in IP Packager" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, Launch SDK" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_OPEN_IP_LOCATION, Open IP Location..." value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_STOP_TRIGGER, Hardware_stop_trigger" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, image_filter_v2_0 (image_filter_v2_0.v" value="11" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, IP Integrator, Open Block Design], 7, false" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Program and Debug, Hardware Manager, Open Target], 27, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Program and Debug, Open Hardware Manager, Open Target], 27, false" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Program and Debug, Open Hardware Manager], 26, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.GettingStartedView_OPEN_PROJECT, Open Project" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_FOR_THIS_ILA_CORE, Waveform Viewer_run_trigger" value="5" type="GuiResourceData"/>
+<property name="PAResourceEtoH.HardwareIlaWaveformView_STOP_TRIGGER_FOR_THIS_ILA_CORE, Waveform Viewer_stop_trigger" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, localhost (1" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, xc7a100t_0 (2" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.IdentificationContentPanel_DESCRIPTION, image_filte" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.IdentificationContentPanel_DESCRIPTION, image_filter" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.IdentificationContentPanel_DESCRIPTION, image_filter_final" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.IdentificationContentPanel_DISPLAY_NAME, image_filter" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.IdentificationContentPanel_DISPLAY_NAME, image_filter_final" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.IdentificationContentPanel_NAME, (String" value="2" type="GuiResourceData"/>
+<property name="PAResourceItoN.IdentificationContentPanel_NAME, image_filter_final" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.IdentificationContentPanel_NAME, image_filter_v2_0" value="3" type="GuiResourceData"/>
+<property name="PAResourceItoN.IdentificationContentPanel_VENDOR_DISPLAY_NAME, (String" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_EXPORT, Export" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_FILE, File" value="4" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, Open Recent File" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_OPEN_RECENT_IP_LOCATION, Open Recent IP Location" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, Open Recent Project" value="2" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PAViews_DASHBOARD, hw_ila_1" value="2" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, Addressing and Memory, 5" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, Compatibility, 1" value="2" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, Customization GUI, 6" value="2" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, Customization Parameters, 3" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, File Groups, 2" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, Identification, 0" value="2" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, Ports and Interfaces, 4" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, Review and Package, 7" value="3" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProbesView_PROBES_TREE, [root, design_1_i/axi_vdma_0_M_AXIS_MM2S_TVALID], 3, false" value="3" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProbesView_PROBES_TREE, [root, design_1_i/axi_vdma_1_M_AXI_S2MM_AWADDR[31:0]], 4, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProbesView_PROBES_TREE, [root, design_1_i/axi_vdma_1_M_AXI_S2MM_AWVALID], 9, false, false, true, false, false, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProbesView_PROBES_TREE, [root, design_1_i/image_filter_v2_0_0_pixel_out_valid], 2, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProbesView_PROBES_TREE, [root, u_ila_0_axis_data_fifo_1_M_AXIS_TVALID], 2, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProgramDebugTab_REFRESH_DEVICE, Refresh device" value="2" type="GuiResourceData"/>
+<property name="PAResourceQtoS.ReviewContentPanel_PACKAGE_IP, Package IP" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, Re-Package IP" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SelectMenu_HIGHLIGHT, Highlight" value="4" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SystemBuilderMenu_UNMARK_DEBUG, Unmark Debug" value="8" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, Expand/Collapse" value="4" type="GuiResourceData"/>
+<property name="PAResourceTtoZ.TaskBanner_CLOSE, (String" value="1" type="GuiResourceData"/>
+<property name="PAResourceTtoZ.TriggerStatusPanel_RUN_TRIGGER_FOR_THIS_ILA_CORE, ILA_run_trigger" value="2" type="GuiResourceData"/>
+<property name="PAResourceTtoZ.TsmEditorPanel_INSERT_PROBE, Code_new" value="2" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_OK, OK" value="4" type="GuiResourceData"/>
+<property name="RDIResource.HPopupTitle_CLOSE, (String" value="2" type="GuiResourceData"/>
+<property name="RDIResource.ProgressDialog_BACKGROUND, Background" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 101, 286" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 128, 203" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 145, 282" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 161, 232" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 161, 234" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 165, 368" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 175, 353" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 176, 262" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 179, 235" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 184, 146" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 184, 332" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 188, 137" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 192, 283" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 198, 199" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 207, 128" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 232, 149" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 238, 270" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 246, 224" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 248, 198" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 268, 356" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 279, 253" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 284, 326" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 306, 275" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 326, 209" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 350, 384" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 371, 8" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 411, 151" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 434, 198" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 468, 176" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 484, 291" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 494, 227" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 498, 331" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 515, 261" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 578, 262" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 584, 208" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 595, 203" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 597, 211" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 90, 249" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, axi_vdma_0_M_AXIS_MM2S_TVALID], 14, false" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, axi_vdma_0_M_AXIS_MM2S_TVALID], 3, false" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, axi_vdma_1_M_AXI_S2MM_AWADDR[31:0]], 13, true" value="2" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, axi_vdma_1_M_AXI_S2MM_AWVALID], 14, false, true, false, false, false, false" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, design_1_i/axi_vdma_0_M_AXIS_MM2S_TDATA[31:0]], 1, true" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, design_1_i/axi_vdma_0_M_AXIS_MM2S_TDATA[31:0]], 15, true" value="2" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, design_1_i/axi_vdma_0_M_AXIS_MM2S_TLAST], 2, false" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, design_1_i/axi_vdma_0_M_AXIS_MM2S_TVALID], 3, false" value="2" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, design_1_i/axi_vdma_0_M_AXIS_MM2S_TVALID], 4, false" value="3" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, design_1_i/axi_vdma_1_M_AXI_S2MM_AWVALID], 6, false" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, design_1_i/axi_vdma_1_M_AXI_S2MM_WDATA[31:0]], 4, true" value="2" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, design_1_i/axi_vdma_1_M_AXI_S2MM_WLAST], 2, false" value="2" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, design_1_i/axi_vdma_1_M_AXI_S2MM_WREADY], 3, false" value="2" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, design_1_i/axis_data_fifo_1_M_AXIS_TDATA[31:0]], 10, true" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, design_1_i/axis_data_fifo_1_M_AXIS_TREADY], 1, false" value="2" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, design_1_i/axis_data_fifo_2_M_AXIS_TDATA[31:0]], 11, true" value="3" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, design_1_i/axis_data_fifo_2_M_AXIS_TDATA[31:0]], 14, true" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, design_1_i/axis_data_fifo_2_M_AXIS_TDATA[31:0]], 5, true" value="4" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, design_1_i/axis_data_fifo_2_s_axis_tready], 14, false, true, false, false, false, false" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, design_1_i/image_filter_v2_0_0_pixel_out[23:0]], 15, true" value="2" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, design_1_i/image_filter_v2_0_0_pixel_out[23:0]], 7, true" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, design_1_i/image_filter_v2_0_0_pixel_out_valid], 16, false, true, false, false, false, false" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, u_ila_0_axi_vdma_1_M_AXI_S2MM_WVALID], 11, false" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, u_ila_0_axis_data_fifo_1_M_AXIS_TVALID], 14, false" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, u_ila_0_axis_data_fifo_1_M_AXIS_TVALID], 9, false" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformView_ADD, Waveform Viewer_new" value="7" type="GuiResourceData"/>
+<property name="RDIResource.WaveformView_REMOVE_SELECTED, Waveform Viewer_Remove1" value="5" type="GuiResourceData"/>
+<property name="Trigger State Machine, 143, 152" value="1" type="GuiResourceData"/>
+<property name="Trigger State Machine, 220, 138" value="1" type="GuiResourceData"/>
+<property name="Trigger State Machine, 229, 66" value="1" type="GuiResourceData"/>
+<property name="Trigger State Machine, 238, 69" value="1" type="GuiResourceData"/>
+<property name="Trigger State Machine, 253, 128" value="1" type="GuiResourceData"/>
+<property name="Trigger State Machine, 264, 66" value="1" type="GuiResourceData"/>
+<property name="Trigger State Machine, 28, 126" value="1" type="GuiResourceData"/>
+<property name="Trigger State Machine, 285, 66" value="1" type="GuiResourceData"/>
+<property name="Trigger State Machine, 287, 129" value="1" type="GuiResourceData"/>
+<property name="Trigger State Machine, 294, 68" value="1" type="GuiResourceData"/>
+<property name="[0 - 4095], 2000, true" value="1" type="GuiResourceData"/>
+<property name="image_filter_top.v, 0, 125" value="1" type="GuiResourceData"/>
+<property name="image_filter_top.v, 0, 145" value="1" type="GuiResourceData"/>
+<property name="image_filter_top.v, 0, 161" value="1" type="GuiResourceData"/>
+<property name="image_filter_top.v, 0, 201" value="1" type="GuiResourceData"/>
+<property name="image_filter_top.v, 149, 257" value="1" type="GuiResourceData"/>
+<property name="image_filter_top.v, 149, 257, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="image_filter_top.v, 150, 162" value="1" type="GuiResourceData"/>
+<property name="image_filter_top.v, 159, 146" value="1" type="GuiResourceData"/>
+<property name="image_filter_top.v, 159, 146, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="image_filter_top.v, 161, 147" value="1" type="GuiResourceData"/>
+<property name="image_filter_top.v, 161, 147, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="image_filter_top.v, 167, 161" value="1" type="GuiResourceData"/>
+<property name="image_filter_top.v, 168, 121" value="1" type="GuiResourceData"/>
+<property name="image_filter_top.v, 180, 195" value="1" type="GuiResourceData"/>
+<property name="image_filter_top.v, 181, 185" value="1" type="GuiResourceData"/>
+<property name="image_filter_top.v, 188, 259" value="1" type="GuiResourceData"/>
+<property name="image_filter_top.v, 2, 204" value="1" type="GuiResourceData"/>
+<property name="image_filter_top.v, 200, 239" value="1" type="GuiResourceData"/>
+<property name="image_filter_top.v, 201, 160" value="1" type="GuiResourceData"/>
+<property name="image_filter_top.v, 216, 277" value="1" type="GuiResourceData"/>
+<property name="image_filter_top.v, 221, 210" value="1" type="GuiResourceData"/>
+<property name="image_filter_top.v, 230, 165" value="2" type="GuiResourceData"/>
+<property name="image_filter_top.v, 236, 225" value="1" type="GuiResourceData"/>
+<property name="image_filter_top.v, 236, 267" value="1" type="GuiResourceData"/>
+<property name="image_filter_top.v, 238, 247" value="1" type="GuiResourceData"/>
+<property name="image_filter_top.v, 245, 256" value="1" type="GuiResourceData"/>
+<property name="image_filter_top.v, 255, 117" value="1" type="GuiResourceData"/>
+<property name="image_filter_top.v, 261, 159" value="1" type="GuiResourceData"/>
+<property name="image_filter_top.v, 270, 302" value="1" type="GuiResourceData"/>
+<property name="image_filter_top.v, 282, 201" value="1" type="GuiResourceData"/>
+<property name="image_filter_top.v, 283, 187" value="1" type="GuiResourceData"/>
+<property name="image_filter_top.v, 289, 133" value="1" type="GuiResourceData"/>
+<property name="image_filter_top.v, 292, 154" value="1" type="GuiResourceData"/>
+<property name="image_filter_top.v, 299, 160" value="1" type="GuiResourceData"/>
+<property name="image_filter_top.v, 367, 178" value="1" type="GuiResourceData"/>
+<property name="image_filter_top.v, 76, 257" value="1" type="GuiResourceData"/>
+<property name="image_filter_top.v, 84, 258" value="1" type="GuiResourceData"/>
+<property name="image_filter_top.v, 84, 258, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="image_filter_top.v, 87, 165" value="1" type="GuiResourceData"/>
+<property name="image_filter_top.v, 92, 139" value="1" type="GuiResourceData"/>
+<property name="image_filter_top.v, 92, 139, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="image_filter_top.v, 98, 293" value="1" type="GuiResourceData"/>
+<property name="image_filter_top.v, 98, 293, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="image_filter_v2_0.v, 140, 299" value="1" type="GuiResourceData"/>
+<property name="image_filter_v2_0.v, 140, 299, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="image_filter_v2_0.v, 156, 258, false, true, false, false, false" value="1" type="GuiResourceData"/>
+<property name="image_filter_v2_0_S00_AXI.v, 259, 356" value="1" type="GuiResourceData"/>
+<property name="image_filter_v2_0_S00_AXI.v, 327, 279" value="1" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="40" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="32" type="TclMode"/>
+</item>
+</section>
+</application>
+</document>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Wed Mar 08 22:43:33 2017">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="1a490060c3a34877a97d99b28a1328ee" type="ProjectID"/>
+<property name="ProjectIteration" value="1" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="AddBusInterfaceHandler" value="1" type="JavaHandler"/>
+<property name="CloseProject" value="1" type="JavaHandler"/>
+<property name="EditInIPPackagerHandler" value="1" type="JavaHandler"/>
+<property name="IPPackagerHandler" value="2" type="JavaHandler"/>
+<property name="IPPackagerWizardHandler" value="1" type="JavaHandler"/>
+<property name="OpenIPLocationHandler" value="1" type="JavaHandler"/>
+<property name="OpenProject" value="1" type="JavaHandler"/>
+<property name="SaveFileProxyHandler" value="1" type="JavaHandler"/>
+<property name="ui.views.b.h.e" value="1" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="FINISH, Finish" value="1" type="GuiResourceData"/>
+<property name="NEXT, Next " value="4" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, AXI Peripheral ;  ;  ;  ; , 2" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, UserIP ;  ;  ;  ; , 1" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, image_filter_top_v1_0 ; AXI4-Stream ; Production ; Included ; xilinx.com:user:image_filter_top:1.0, 2, image_filter_top_v1_0, 0, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, image_filter_top_v1_0 ; AXI4-Stream ; Production ; Included ; xilinx.com:user:image_filter_top:1.0, 2, image_filter_top_v1_0, 0, false, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER, Edit in IP Packager" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD, Create and Package IP..." value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_OPEN_IP_LOCATION, Open IP Location..." value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_PACKAGER_ADD_BUS_INTERFACE, Package IP_packager_add_bus_interface" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_REPLACE_IN_FILES, Replace in Files..." value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, IP-XACT], 2" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Syntax Error Files, image_filter_v2_0_S00_AXI.v], 3, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Syntax Error Files, image_filter_v2_0_S00_AXI.v], 3, false, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Syntax Error Files], 1" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, image_filter_top (image_filter_top.v" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, image_filter_v2_0 (image_filter_v2_0.v" value="4" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FindAndReplaceAllDialog_FIND, Find" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FindInFilesView_REPLACE_ALL_OCCURRENCES_IN_ALL_FILES, Replace All" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FloatingTopDialog_IGNORE_AND_CONTINUE_WITH_INVALID_TOP, Ignore and continue with invalid top module" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.GettingStartedView_MANAGE_IP, Manage IP" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.GettingStartedView_OPEN_PROJECT, Open Project" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.InterfaceDefinitionChooser_INTERFACE_DEFINITION_CHOOSER, (String" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.InterfaceDefinitionTreeTable_INTERFACES_TREE_TABLE, Advanced ; , 5" value="2" type="GuiResourceData"/>
+<property name="PAResourceItoN.InterfaceDefinitionTreeTable_INTERFACES_TREE_TABLE, IO Interfaces ; , 4" value="2" type="GuiResourceData"/>
+<property name="PAResourceItoN.InterfaceDefinitionTreeTable_INTERFACES_TREE_TABLE, Signal ; , 3" value="4" type="GuiResourceData"/>
+<property name="PAResourceItoN.InterfaceDefinitionTreeTable_INTERFACES_TREE_TABLE, Signal ; , 3, Signal, 0, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.InterfaceDefinitionTreeTable_INTERFACES_TREE_TABLE, aximm_rtl ; AMBA AXI Interface, 1, aximm_rtl, 0, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.InterfaceDefinitionTreeTable_INTERFACES_TREE_TABLE, axis_rtl ; AMBA AXI4-Stream Interface, 2, axis_rtl, 0, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_EDIT, Edit" value="6" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_FLOW, Flow" value="4" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_REPORT, Report" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_TOOLS, Tools" value="4" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_WINDOW, Window" value="4" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Analysis Results, sources_1, [HDL 9-806] Syntax error near input. [f:/image_filter/ip_repo/image_filter_2.0/hdl/image_filter_v2_0.v:32]. ], 14, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Analysis Results, sources_1, [HDL 9-806] Syntax error near output. [f:/image_filter/ip_repo/image_filter_2.0/hdl/image_filter_v2_0_S00_AXI.v:21]. ], 14, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.NewIpWizard_CREATE_NEW_AXI4_IP_CREATE_AXI4, Create a new AXI4 peripheral. Create an AXI4 IP, driver, software test application, IP Integrator AXI4 BFM simulation and debug demonstration design." value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.NewIpWizard_EDIT_IP, Edit IP" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.NewIpWizard_NAME_MYIP, image_filter" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.NewIpWizard_VERSION, 2.0" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, File Groups, 2" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, Ports and Interfaces, 4" value="1" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_OK, OK" value="4" type="GuiResourceData"/>
+<property name="RDIResource.ConfirmSaveTextEditsDialog_YES, Yes" value="1" type="GuiResourceData"/>
+<property name="image_filter_top.v, 214, 315" value="1" type="GuiResourceData"/>
+<property name="image_filter_top.v, 440, 264" value="1" type="GuiResourceData"/>
+<property name="image_filter_v2_0.v, 170, 332" value="1" type="GuiResourceData"/>
+<property name="image_filter_v2_0.v, 23, 240" value="1" type="GuiResourceData"/>
+<property name="image_filter_v2_0.v, 231, 198" value="1" type="GuiResourceData"/>
+<property name="image_filter_v2_0.v, 239, 232" value="1" type="GuiResourceData"/>
+<property name="image_filter_v2_0.v, 243, 203" value="1" type="GuiResourceData"/>
+<property name="image_filter_v2_0.v, 243, 84" value="1" type="GuiResourceData"/>
+<property name="image_filter_v2_0.v, 263, 234" value="1" type="GuiResourceData"/>
+<property name="image_filter_v2_0.v, 263, 234, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="image_filter_v2_0.v, 378, 323" value="1" type="GuiResourceData"/>
+<property name="image_filter_v2_0_S00_AXI.v, 183, 330" value="1" type="GuiResourceData"/>
+<property name="image_filter_v2_0_S00_AXI.v, 184, 338" value="1" type="GuiResourceData"/>
+<property name="image_filter_v2_0_S00_AXI.v, 191, 222" value="1" type="GuiResourceData"/>
+<property name="image_filter_v2_0_S00_AXI.v, 201, 199" value="1" type="GuiResourceData"/>
+<property name="image_filter_v2_0_S00_AXI.v, 226, 207" value="1" type="GuiResourceData"/>
+<property name="image_filter_v2_0_S00_AXI.v, 241, 218, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="image_filter_v2_0_S00_AXI.v, 242, 218" value="1" type="GuiResourceData"/>
+<property name="image_filter_v2_0_S00_AXI.v, 282, 216" value="1" type="GuiResourceData"/>
+<property name="image_filter_v2_0_S00_AXI.v, 286, 276" value="1" type="GuiResourceData"/>
+<property name="image_filter_v2_0_S00_AXI.v, 292, 198" value="1" type="GuiResourceData"/>
+<property name="image_filter_v2_0_S00_AXI.v, 312, 303" value="1" type="GuiResourceData"/>
+<property name="image_filter_v2_0_S00_AXI.v, 323, 200" value="1" type="GuiResourceData"/>
+<property name="image_filter_v2_0_S00_AXI.v, 325, 327" value="1" type="GuiResourceData"/>
+<property name="image_filter_v2_0_S00_AXI.v, 332, 200" value="1" type="GuiResourceData"/>
+<property name="image_filter_v2_0_S00_AXI.v, 332, 200, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="image_filter_v2_0_S00_AXI.v, 332, 283" value="1" type="GuiResourceData"/>
+<property name="image_filter_v2_0_S00_AXI.v, 373, 308" value="1" type="GuiResourceData"/>
+<property name="image_filter_v2_0_S00_AXI.v, 378, 193" value="1" type="GuiResourceData"/>
+<property name="image_filter_v2_0_S00_AXI.v, 399, 258" value="1" type="GuiResourceData"/>
+<property name="image_filter_v2_0_S00_AXI.v, 48, 197" value="1" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="30" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="25" type="TclMode"/>
+</item>
+</section>
+</application>
+</document>

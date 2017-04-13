@@ -1,0 +1,13 @@
+com.xilinx.sdk.linkgen.prefs.capstone\:.bss=mig_7series_0
+com.xilinx.sdk.linkgen.prefs.capstone\:.data=mig_7series_0
+com.xilinx.sdk.linkgen.prefs.capstone\:.rodata=mig_7series_0
+com.xilinx.sdk.linkgen.prefs.capstone\:.sbss=mig_7series_0
+com.xilinx.sdk.linkgen.prefs.capstone\:.sbss2=mig_7series_0
+com.xilinx.sdk.linkgen.prefs.capstone\:.sdata=mig_7series_0
+com.xilinx.sdk.linkgen.prefs.capstone\:.sdata2=mig_7series_0
+com.xilinx.sdk.linkgen.prefs.capstone\:.text=mig_7series_0
+com.xilinx.sdk.linkgen.prefs.capstone\:heap=mig_7series_0
+com.xilinx.sdk.linkgen.prefs.capstone\:heap-size=1024
+com.xilinx.sdk.linkgen.prefs.capstone\:stack=mig_7series_0
+com.xilinx.sdk.linkgen.prefs.capstone\:stack-size=1024
+eclipse.preferences.version=1

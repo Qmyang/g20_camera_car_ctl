@@ -1,0 +1,794 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Sun Feb 26 21:33:41 2017
+# Process ID: 7084
+# Current directory: F:/ECE532/projects/test_bench_demo/image_filter
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11428 F:\ECE532\projects\test_bench_demo\image_filter\image_filter.xpr
+# Log file: F:/ECE532/projects/test_bench_demo/image_filter/vivado.log
+# Journal file: F:/ECE532/projects/test_bench_demo/image_filter\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/ECE532/projects/test_bench_demo/image_filter/image_filter.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/ECE532/Vivado/2016.2/data/ip'.
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open F:/ECE532/projects/test_bench_demo/image_filter/image_filter.srcs/sim_1/new/image_filter_tb.v w ]
+add_files -fileset sim_1 F:/ECE532/projects/test_bench_demo/image_filter/image_filter.srcs/sim_1/new/image_filter_tb.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'image_filter_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/ECE532/projects/test_bench_demo/image_filter/image_filter.sim/sim_1/behav'
+"xvlog -m64 --relax -prj image_filter_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/ECE532/projects/test_bench_demo/image_filter/image_filter.srcs/sources_1/new/serial_filter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module serial_filter
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/ECE532/projects/test_bench_demo/image_filter/image_filter.srcs/sources_1/new/image_filter_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module image_filter_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/ECE532/projects/test_bench_demo/image_filter/image_filter.srcs/sim_1/new/image_filter_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module image_filter_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/ECE532/projects/test_bench_demo/image_filter/image_filter.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/ECE532/projects/test_bench_demo/image_filter/image_filter.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: F:/ECE532/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 645e020e6af04013a915d344c9477db4 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot image_filter_tb_behav xil_defaultlib.image_filter_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.serial_filter
+Compiling module xil_defaultlib.image_filter_top_default
+Compiling module xil_defaultlib.image_filter_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot image_filter_tb_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source F:/ECE532/projects/test_bench_demo/image_filter/image_filter.sim/sim_1/behav/xsim.dir/image_filter_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Feb 26 21:35:20 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 855.910 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/ECE532/projects/test_bench_demo/image_filter/image_filter.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "image_filter_tb_behav -key {Behavioral:sim_1:Functional:image_filter_tb} -tclbatch {image_filter_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source image_filter_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Wavedata 42-489] Can't add object "/image_filter_tb/memory" to the wave window because it has 9830400 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/image_filter_tb/buffer_out" to the wave window because it has 98336 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+# run 1000ns
+ERROR: Illegal binary digit '8' found in data of file "F:/ECE532/projects/test_bench_demo/image_filter/image.mif"
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'image_filter_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 863.535 ; gain = 7.625
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 871.250 ; gain = 7.715
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'image_filter_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/ECE532/projects/test_bench_demo/image_filter/image_filter.sim/sim_1/behav'
+"xvlog -m64 --relax -prj image_filter_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/ECE532/projects/test_bench_demo/image_filter/image_filter.srcs/sources_1/new/serial_filter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module serial_filter
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/ECE532/projects/test_bench_demo/image_filter/image_filter.srcs/sources_1/new/image_filter_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module image_filter_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/ECE532/projects/test_bench_demo/image_filter/image_filter.srcs/sim_1/new/image_filter_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module image_filter_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/ECE532/projects/test_bench_demo/image_filter/image_filter.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/ECE532/projects/test_bench_demo/image_filter/image_filter.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: F:/ECE532/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 645e020e6af04013a915d344c9477db4 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot image_filter_tb_behav xil_defaultlib.image_filter_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.serial_filter
+Compiling module xil_defaultlib.image_filter_top_default
+Compiling module xil_defaultlib.image_filter_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot image_filter_tb_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source F:/ECE532/projects/test_bench_demo/image_filter/image_filter.sim/sim_1/behav/xsim.dir/image_filter_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Feb 26 21:36:05 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/ECE532/projects/test_bench_demo/image_filter/image_filter.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "image_filter_tb_behav -key {Behavioral:sim_1:Functional:image_filter_tb} -tclbatch {image_filter_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source image_filter_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Wavedata 42-489] Can't add object "/image_filter_tb/memory" to the wave window because it has 9830400 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/image_filter_tb/buffer_out" to the wave window because it has 98336 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+# run 1000ns
+WARNING: Too many words specified in data file F:/ECE532/projects/test_bench_demo/image_filter/image.mif
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'image_filter_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 873.609 ; gain = 2.359
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+WARNING: Too many words specified in data file F:/ECE532/projects/test_bench_demo/image_filter/image.mif
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:54 ; elapsed = 00:00:53 . Memory (MB): peak = 877.199 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 877.199 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'image_filter_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/ECE532/projects/test_bench_demo/image_filter/image_filter.sim/sim_1/behav'
+"xvlog -m64 --relax -prj image_filter_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/ECE532/projects/test_bench_demo/image_filter/image_filter.srcs/sources_1/new/serial_filter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module serial_filter
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/ECE532/projects/test_bench_demo/image_filter/image_filter.srcs/sources_1/new/image_filter_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module image_filter_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/ECE532/projects/test_bench_demo/image_filter/image_filter.srcs/sim_1/new/image_filter_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module image_filter_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/ECE532/projects/test_bench_demo/image_filter/image_filter.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/ECE532/projects/test_bench_demo/image_filter/image_filter.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: F:/ECE532/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 645e020e6af04013a915d344c9477db4 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot image_filter_tb_behav xil_defaultlib.image_filter_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.serial_filter
+Compiling module xil_defaultlib.image_filter_top_default
+Compiling module xil_defaultlib.image_filter_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot image_filter_tb_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source F:/ECE532/projects/test_bench_demo/image_filter/image_filter.sim/sim_1/behav/xsim.dir/image_filter_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Feb 26 21:46:51 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 877.199 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/ECE532/projects/test_bench_demo/image_filter/image_filter.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "image_filter_tb_behav -key {Behavioral:sim_1:Functional:image_filter_tb} -tclbatch {image_filter_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source image_filter_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Wavedata 42-489] Can't add object "/image_filter_tb/memory" to the wave window because it has 7372800 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/image_filter_tb/buffer_out" to the wave window because it has 73752 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+# run 1000ns
+WARNING: Too many words specified in data file F:/ECE532/projects/test_bench_demo/image_filter/image.mif
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'image_filter_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 878.613 ; gain = 1.414
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+WARNING: Too many words specified in data file F:/ECE532/projects/test_bench_demo/image_filter/image.mif
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 908.227 ; gain = 18.617
+INFO: [Common 17-344] 'run' was cancelled
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 942.363 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'image_filter_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/ECE532/projects/test_bench_demo/image_filter/image_filter.sim/sim_1/behav'
+"xvlog -m64 --relax -prj image_filter_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/ECE532/projects/test_bench_demo/image_filter/image_filter.srcs/sources_1/new/serial_filter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module serial_filter
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/ECE532/projects/test_bench_demo/image_filter/image_filter.srcs/sources_1/new/image_filter_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module image_filter_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/ECE532/projects/test_bench_demo/image_filter/image_filter.srcs/sim_1/new/image_filter_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module image_filter_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/ECE532/projects/test_bench_demo/image_filter/image_filter.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/ECE532/projects/test_bench_demo/image_filter/image_filter.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: F:/ECE532/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 645e020e6af04013a915d344c9477db4 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot image_filter_tb_behav xil_defaultlib.image_filter_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.serial_filter
+Compiling module xil_defaultlib.image_filter_top_default
+Compiling module xil_defaultlib.image_filter_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot image_filter_tb_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source F:/ECE532/projects/test_bench_demo/image_filter/image_filter.sim/sim_1/behav/xsim.dir/image_filter_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Feb 26 21:53:37 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/ECE532/projects/test_bench_demo/image_filter/image_filter.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "image_filter_tb_behav -key {Behavioral:sim_1:Functional:image_filter_tb} -tclbatch {image_filter_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source image_filter_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Wavedata 42-489] Can't add object "/image_filter_tb/memory" to the wave window because it has 7372800 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/image_filter_tb/buffer_out" to the wave window because it has 73752 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+# run 1000ns
+WARNING: Too many words specified in data file F:/ECE532/projects/test_bench_demo/image_filter/image.mif
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'image_filter_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 942.363 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+WARNING: Too many words specified in data file F:/ECE532/projects/test_bench_demo/image_filter/image.mif
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 942.363 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+pwd
+F:/ECE532/projects/test_bench_demo/image_filter
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 942.363 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'image_filter_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/ECE532/projects/test_bench_demo/image_filter/image_filter.sim/sim_1/behav'
+"xvlog -m64 --relax -prj image_filter_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/ECE532/projects/test_bench_demo/image_filter/image_filter.srcs/sources_1/new/serial_filter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module serial_filter
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/ECE532/projects/test_bench_demo/image_filter/image_filter.srcs/sources_1/new/image_filter_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module image_filter_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/ECE532/projects/test_bench_demo/image_filter/image_filter.srcs/sim_1/new/image_filter_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module image_filter_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/ECE532/projects/test_bench_demo/image_filter/image_filter.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/ECE532/projects/test_bench_demo/image_filter/image_filter.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: F:/ECE532/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 645e020e6af04013a915d344c9477db4 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot image_filter_tb_behav xil_defaultlib.image_filter_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.serial_filter
+Compiling module xil_defaultlib.image_filter_top_default
+Compiling module xil_defaultlib.image_filter_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot image_filter_tb_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source F:/ECE532/projects/test_bench_demo/image_filter/image_filter.sim/sim_1/behav/xsim.dir/image_filter_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Feb 26 22:11:24 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 942.363 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/ECE532/projects/test_bench_demo/image_filter/image_filter.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "image_filter_tb_behav -key {Behavioral:sim_1:Functional:image_filter_tb} -tclbatch {image_filter_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source image_filter_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Wavedata 42-489] Can't add object "/image_filter_tb/memory" to the wave window because it has 7372808 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/image_filter_tb/buffer_out" to the wave window because it has 73752 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'image_filter_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 942.363 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 942.363 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'image_filter_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/ECE532/projects/test_bench_demo/image_filter/image_filter.sim/sim_1/behav'
+"xvlog -m64 --relax -prj image_filter_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/ECE532/projects/test_bench_demo/image_filter/image_filter.srcs/sources_1/new/serial_filter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module serial_filter
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/ECE532/projects/test_bench_demo/image_filter/image_filter.srcs/sources_1/new/image_filter_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module image_filter_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/ECE532/projects/test_bench_demo/image_filter/image_filter.srcs/sim_1/new/image_filter_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module image_filter_tb
+ERROR: [VRFC 10-91] outfile is not declared [F:/ECE532/projects/test_bench_demo/image_filter/image_filter.srcs/sim_1/new/image_filter_tb.v:71]
+ERROR: [VRFC 10-1040] module image_filter_tb ignored due to previous errors [F:/ECE532/projects/test_bench_demo/image_filter/image_filter.srcs/sim_1/new/image_filter_tb.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'F:/ECE532/projects/test_bench_demo/image_filter/image_filter.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'F:/ECE532/projects/test_bench_demo/image_filter/image_filter.sim/sim_1/behav/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'image_filter_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/ECE532/projects/test_bench_demo/image_filter/image_filter.sim/sim_1/behav'
+"xvlog -m64 --relax -prj image_filter_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/ECE532/projects/test_bench_demo/image_filter/image_filter.srcs/sources_1/new/serial_filter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module serial_filter
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/ECE532/projects/test_bench_demo/image_filter/image_filter.srcs/sources_1/new/image_filter_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module image_filter_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/ECE532/projects/test_bench_demo/image_filter/image_filter.srcs/sim_1/new/image_filter_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module image_filter_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/ECE532/projects/test_bench_demo/image_filter/image_filter.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/ECE532/projects/test_bench_demo/image_filter/image_filter.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: F:/ECE532/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 645e020e6af04013a915d344c9477db4 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot image_filter_tb_behav xil_defaultlib.image_filter_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.serial_filter
+Compiling module xil_defaultlib.image_filter_top_default
+Compiling module xil_defaultlib.image_filter_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot image_filter_tb_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source F:/ECE532/projects/test_bench_demo/image_filter/image_filter.sim/sim_1/behav/xsim.dir/image_filter_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Feb 26 22:26:38 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 942.363 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/ECE532/projects/test_bench_demo/image_filter/image_filter.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "image_filter_tb_behav -key {Behavioral:sim_1:Functional:image_filter_tb} -tclbatch {image_filter_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source image_filter_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Wavedata 42-489] Can't add object "/image_filter_tb/memory" to the wave window because it has 7372808 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/image_filter_tb/buffer_out" to the wave window because it has 73736 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'image_filter_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 942.363 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:56 ; elapsed = 00:01:01 . Memory (MB): peak = 942.363 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 942.363 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'image_filter_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/ECE532/projects/test_bench_demo/image_filter/image_filter.sim/sim_1/behav'
+"xvlog -m64 --relax -prj image_filter_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/ECE532/projects/test_bench_demo/image_filter/image_filter.srcs/sources_1/new/serial_filter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module serial_filter
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/ECE532/projects/test_bench_demo/image_filter/image_filter.srcs/sources_1/new/image_filter_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module image_filter_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/ECE532/projects/test_bench_demo/image_filter/image_filter.srcs/sim_1/new/image_filter_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module image_filter_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/ECE532/projects/test_bench_demo/image_filter/image_filter.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/ECE532/projects/test_bench_demo/image_filter/image_filter.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: F:/ECE532/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 645e020e6af04013a915d344c9477db4 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot image_filter_tb_behav xil_defaultlib.image_filter_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.serial_filter
+Compiling module xil_defaultlib.image_filter_top_default
+Compiling module xil_defaultlib.image_filter_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot image_filter_tb_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source F:/ECE532/projects/test_bench_demo/image_filter/image_filter.sim/sim_1/behav/xsim.dir/image_filter_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Feb 26 22:35:43 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 942.363 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/ECE532/projects/test_bench_demo/image_filter/image_filter.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "image_filter_tb_behav -key {Behavioral:sim_1:Functional:image_filter_tb} -tclbatch {image_filter_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source image_filter_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Wavedata 42-489] Can't add object "/image_filter_tb/memory" to the wave window because it has 7372808 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/image_filter_tb/buffer_out" to the wave window because it has 73736 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'image_filter_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 943.898 ; gain = 1.535
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 946.016 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property -name {xsim.simulate.runtime} -value {10000000ns} -objects [get_filesets sim_1]
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'image_filter_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/ECE532/projects/test_bench_demo/image_filter/image_filter.sim/sim_1/behav'
+"xvlog -m64 --relax -prj image_filter_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/ECE532/projects/test_bench_demo/image_filter/image_filter.srcs/sources_1/new/serial_filter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module serial_filter
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/ECE532/projects/test_bench_demo/image_filter/image_filter.srcs/sources_1/new/image_filter_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module image_filter_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/ECE532/projects/test_bench_demo/image_filter/image_filter.srcs/sim_1/new/image_filter_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module image_filter_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/ECE532/projects/test_bench_demo/image_filter/image_filter.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/ECE532/projects/test_bench_demo/image_filter/image_filter.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: F:/ECE532/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 645e020e6af04013a915d344c9477db4 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot image_filter_tb_behav xil_defaultlib.image_filter_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.serial_filter
+Compiling module xil_defaultlib.image_filter_top_default
+Compiling module xil_defaultlib.image_filter_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot image_filter_tb_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source F:/ECE532/projects/test_bench_demo/image_filter/image_filter.sim/sim_1/behav/xsim.dir/image_filter_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Feb 26 22:37:11 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/ECE532/projects/test_bench_demo/image_filter/image_filter.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "image_filter_tb_behav -key {Behavioral:sim_1:Functional:image_filter_tb} -tclbatch {image_filter_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source image_filter_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Wavedata 42-489] Can't add object "/image_filter_tb/memory" to the wave window because it has 7372808 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/image_filter_tb/buffer_out" to the wave window because it has 73736 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+# run 10000000ns
+run: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 946.016 ; gain = 0.000
+xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 946.016 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'image_filter_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 10000000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 946.016 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'image_filter_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/ECE532/projects/test_bench_demo/image_filter/image_filter.sim/sim_1/behav'
+"xvlog -m64 --relax -prj image_filter_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/ECE532/projects/test_bench_demo/image_filter/image_filter.srcs/sources_1/new/serial_filter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module serial_filter
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/ECE532/projects/test_bench_demo/image_filter/image_filter.srcs/sources_1/new/image_filter_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module image_filter_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/ECE532/projects/test_bench_demo/image_filter/image_filter.srcs/sim_1/new/image_filter_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module image_filter_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/ECE532/projects/test_bench_demo/image_filter/image_filter.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/ECE532/projects/test_bench_demo/image_filter/image_filter.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: F:/ECE532/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 645e020e6af04013a915d344c9477db4 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot image_filter_tb_behav xil_defaultlib.image_filter_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.serial_filter
+Compiling module xil_defaultlib.image_filter_top_default
+Compiling module xil_defaultlib.image_filter_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot image_filter_tb_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source F:/ECE532/projects/test_bench_demo/image_filter/image_filter.sim/sim_1/behav/xsim.dir/image_filter_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Feb 26 22:38:30 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/ECE532/projects/test_bench_demo/image_filter/image_filter.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "image_filter_tb_behav -key {Behavioral:sim_1:Functional:image_filter_tb} -tclbatch {image_filter_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source image_filter_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Wavedata 42-489] Can't add object "/image_filter_tb/memory" to the wave window because it has 7372808 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/image_filter_tb/buffer_out" to the wave window because it has 73736 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+# run 10000000ns
+Starting!
+run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 946.316 ; gain = 0.000
+xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 946.316 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'image_filter_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 10000000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 946.316 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10000000 us
+Starting!
+run: Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1005.672 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'image_filter_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/ECE532/projects/test_bench_demo/image_filter/image_filter.sim/sim_1/behav'
+"xvlog -m64 --relax -prj image_filter_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/ECE532/projects/test_bench_demo/image_filter/image_filter.srcs/sources_1/new/serial_filter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module serial_filter
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/ECE532/projects/test_bench_demo/image_filter/image_filter.srcs/sources_1/new/image_filter_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module image_filter_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/ECE532/projects/test_bench_demo/image_filter/image_filter.srcs/sim_1/new/image_filter_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module image_filter_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/ECE532/projects/test_bench_demo/image_filter/image_filter.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/ECE532/projects/test_bench_demo/image_filter/image_filter.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: F:/ECE532/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 645e020e6af04013a915d344c9477db4 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot image_filter_tb_behav xil_defaultlib.image_filter_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.serial_filter
+Compiling module xil_defaultlib.image_filter_top_default
+Compiling module xil_defaultlib.image_filter_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot image_filter_tb_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source F:/ECE532/projects/test_bench_demo/image_filter/image_filter.sim/sim_1/behav/xsim.dir/image_filter_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Feb 26 23:01:57 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/ECE532/projects/test_bench_demo/image_filter/image_filter.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "image_filter_tb_behav -key {Behavioral:sim_1:Functional:image_filter_tb} -tclbatch {image_filter_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source image_filter_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Wavedata 42-489] Can't add object "/image_filter_tb/memory" to the wave window because it has 7372808 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/image_filter_tb/buffer_out" to the wave window because it has 73736 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+# run 10000000ns
+Starting!
+run: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1005.672 ; gain = 0.000
+xsim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1005.672 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'image_filter_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 10000000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 1005.672 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+Starting!
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1005.672 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Feb 26 23:08:41 2017...

@@ -1,0 +1,387 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Tue Mar 14 13:42:45 2017
+# Process ID: 6236
+# Current directory: F:/image_filter/image_filter.runs/synth_1
+# Command line: vivado.exe -log image_filter_top.vds -mode batch -messageDb vivado.pb -notrace -source image_filter_top.tcl
+# Log file: F:/image_filter/image_filter.runs/synth_1/image_filter_top.vds
+# Journal file: F:/image_filter/image_filter.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source image_filter_top.tcl -notrace
+Command: synth_design -top image_filter_top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4472 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 307.660 ; gain = 99.188
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'image_filter_top' [F:/image_filter/image_filter.srcs/sources_1/new/image_filter_top.v:23]
+	Parameter hpixels bound to: 800 - type: integer 
+	Parameter vlines bound to: 521 - type: integer 
+	Parameter hpulse bound to: 96 - type: integer 
+	Parameter vpulse bound to: 2 - type: integer 
+	Parameter hbp bound to: 144 - type: integer 
+	Parameter hfp bound to: 784 - type: integer 
+	Parameter vbp bound to: 31 - type: integer 
+	Parameter vfp bound to: 511 - type: integer 
+	Parameter IDLE bound to: 3'b000 
+	Parameter READ_FRAME_START bound to: 3'b001 
+	Parameter READ_LINES bound to: 3'b010 
+	Parameter WRITE_ONE_LINE bound to: 3'b011 
+	Parameter RESET_FILTERS_AFTER_WRITE bound to: 3'b100 
+	Parameter CHANGE_FILTER bound to: 3'b101 
+INFO: [Synth 8-638] synthesizing module 'serial_filter' [F:/image_filter/image_filter.srcs/sources_1/new/serial_filter.v:23]
+INFO: [Synth 8-256] done synthesizing module 'serial_filter' (1#1) [F:/image_filter/image_filter.srcs/sources_1/new/serial_filter.v:23]
+INFO: [Synth 8-256] done synthesizing module 'image_filter_top' (2#1) [F:/image_filter/image_filter.srcs/sources_1/new/image_filter_top.v:23]
+WARNING: [Synth 8-3917] design image_filter_top has port tkeep[3] driven by constant 1
+WARNING: [Synth 8-3917] design image_filter_top has port tkeep[2] driven by constant 1
+WARNING: [Synth 8-3917] design image_filter_top has port tkeep[1] driven by constant 1
+WARNING: [Synth 8-3917] design image_filter_top has port tkeep[0] driven by constant 1
+WARNING: [Synth 8-3331] design image_filter_top has unconnected port pixel_out_ready
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 344.980 ; gain = 136.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 344.980 ; gain = 136.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 344.980 ; gain = 136.508
+---------------------------------------------------------------------------------
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [F:/image_filter/image_filter.srcs/sources_1/new/serial_filter.v:30]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [F:/image_filter/image_filter.srcs/sources_1/new/serial_filter.v:31]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [F:/image_filter/image_filter.srcs/sources_1/new/serial_filter.v:30]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [F:/image_filter/image_filter.srcs/sources_1/new/serial_filter.v:31]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [F:/image_filter/image_filter.srcs/sources_1/new/serial_filter.v:30]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [F:/image_filter/image_filter.srcs/sources_1/new/serial_filter.v:31]
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-802] inferred FSM for state register 'mst_exec_state_reg' in module 'image_filter_top'
+INFO: [Synth 8-5544] ROM "pixel_out" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mst_exec_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mst_exec_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "mst_exec_state" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                              000
+RESET_FILTERS_AFTER_WRITE |                              001 |                              100
+        READ_FRAME_START |                              010 |                              001
+              READ_LINES |                              011 |                              010
+          WRITE_ONE_LINE |                              100 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mst_exec_state_reg' using encoding 'sequential' in module 'image_filter_top'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 361.438 ; gain = 152.965
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 1     
+	   3 Input      2 Bit       Adders := 64    
+	   3 Input      1 Bit       Adders := 128   
++---Registers : 
+	               24 Bit    Registers := 65    
+	               10 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   9 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module image_filter_top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   9 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+Module serial_filter 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      2 Bit       Adders := 1     
+	   3 Input      1 Bit       Adders := 2     
++---Registers : 
+	               24 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 475.125 ; gain = 266.652
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3917] design image_filter_top has port tkeep[3] driven by constant 1
+WARNING: [Synth 8-3917] design image_filter_top has port tkeep[2] driven by constant 1
+WARNING: [Synth 8-3917] design image_filter_top has port tkeep[1] driven by constant 1
+WARNING: [Synth 8-3917] design image_filter_top has port tkeep[0] driven by constant 1
+WARNING: [Synth 8-3331] design image_filter_top has unconnected port pixel_out_ready
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:22 . Memory (MB): peak = 476.691 ; gain = 268.219
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:22 . Memory (MB): peak = 476.691 ; gain = 268.219
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:29 . Memory (MB): peak = 551.867 ; gain = 343.395
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:29 . Memory (MB): peak = 551.867 ; gain = 343.395
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:29 . Memory (MB): peak = 551.867 ; gain = 343.395
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 551.867 ; gain = 343.395
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 551.867 ; gain = 343.395
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 551.867 ; gain = 343.395
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:31 . Memory (MB): peak = 551.867 ; gain = 343.395
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:31 . Memory (MB): peak = 551.867 ; gain = 343.395
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:31 . Memory (MB): peak = 551.867 ; gain = 343.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:31 . Memory (MB): peak = 551.867 ; gain = 343.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:31 . Memory (MB): peak = 551.867 ; gain = 343.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:31 . Memory (MB): peak = 551.867 ; gain = 343.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |BUFG  |     1|
+|2     |LUT1  |     8|
+|3     |LUT2  |    11|
+|4     |LUT3  |    44|
+|5     |LUT4  |    11|
+|6     |LUT5  |    76|
+|7     |LUT6  |   481|
+|8     |MUXF7 |   192|
+|9     |MUXF8 |    96|
+|10    |FDRE  |    60|
+|11    |FDSE  |  1536|
+|12    |IBUF  |    27|
+|13    |OBUF  |    32|
++------+------+------+
+
+Report Instance Areas: 
++------+----------------------------+-----------------+------+
+|      |Instance                    |Module           |Cells |
++------+----------------------------+-----------------+------+
+|1     |top                         |                 |  2575|
+|2     |  \genblk1[0].filter_inst   |serial_filter    |    29|
+|3     |  \genblk1[10].filter_inst  |serial_filter_0  |    26|
+|4     |  \genblk1[11].filter_inst  |serial_filter_1  |    74|
+|5     |  \genblk1[12].filter_inst  |serial_filter_2  |    26|
+|6     |  \genblk1[13].filter_inst  |serial_filter_3  |    26|
+|7     |  \genblk1[14].filter_inst  |serial_filter_4  |    26|
+|8     |  \genblk1[15].filter_inst  |serial_filter_5  |    51|
+|9     |  \genblk1[16].filter_inst  |serial_filter_6  |    26|
+|10    |  \genblk1[17].filter_inst  |serial_filter_7  |    26|
+|11    |  \genblk1[18].filter_inst  |serial_filter_8  |    26|
+|12    |  \genblk1[19].filter_inst  |serial_filter_9  |    98|
+|13    |  \genblk1[1].filter_inst   |serial_filter_10 |    26|
+|14    |  \genblk1[20].filter_inst  |serial_filter_11 |    26|
+|15    |  \genblk1[21].filter_inst  |serial_filter_12 |    26|
+|16    |  \genblk1[22].filter_inst  |serial_filter_13 |    26|
+|17    |  \genblk1[23].filter_inst  |serial_filter_14 |    51|
+|18    |  \genblk1[24].filter_inst  |serial_filter_15 |    26|
+|19    |  \genblk1[25].filter_inst  |serial_filter_16 |    26|
+|20    |  \genblk1[26].filter_inst  |serial_filter_17 |    26|
+|21    |  \genblk1[27].filter_inst  |serial_filter_18 |    74|
+|22    |  \genblk1[28].filter_inst  |serial_filter_19 |    26|
+|23    |  \genblk1[29].filter_inst  |serial_filter_20 |    26|
+|24    |  \genblk1[2].filter_inst   |serial_filter_21 |    26|
+|25    |  \genblk1[30].filter_inst  |serial_filter_22 |    26|
+|26    |  \genblk1[31].filter_inst  |serial_filter_23 |    51|
+|27    |  \genblk1[32].filter_inst  |serial_filter_24 |    26|
+|28    |  \genblk1[33].filter_inst  |serial_filter_25 |    26|
+|29    |  \genblk1[34].filter_inst  |serial_filter_26 |    26|
+|30    |  \genblk1[35].filter_inst  |serial_filter_27 |    98|
+|31    |  \genblk1[36].filter_inst  |serial_filter_28 |    26|
+|32    |  \genblk1[37].filter_inst  |serial_filter_29 |    26|
+|33    |  \genblk1[38].filter_inst  |serial_filter_30 |    26|
+|34    |  \genblk1[39].filter_inst  |serial_filter_31 |    51|
+|35    |  \genblk1[3].filter_inst   |serial_filter_32 |    98|
+|36    |  \genblk1[40].filter_inst  |serial_filter_33 |    26|
+|37    |  \genblk1[41].filter_inst  |serial_filter_34 |    26|
+|38    |  \genblk1[42].filter_inst  |serial_filter_35 |    26|
+|39    |  \genblk1[43].filter_inst  |serial_filter_36 |    74|
+|40    |  \genblk1[44].filter_inst  |serial_filter_37 |    26|
+|41    |  \genblk1[45].filter_inst  |serial_filter_38 |    26|
+|42    |  \genblk1[46].filter_inst  |serial_filter_39 |    26|
+|43    |  \genblk1[47].filter_inst  |serial_filter_40 |    51|
+|44    |  \genblk1[48].filter_inst  |serial_filter_41 |    26|
+|45    |  \genblk1[49].filter_inst  |serial_filter_42 |    26|
+|46    |  \genblk1[4].filter_inst   |serial_filter_43 |    26|
+|47    |  \genblk1[50].filter_inst  |serial_filter_44 |    26|
+|48    |  \genblk1[51].filter_inst  |serial_filter_45 |   122|
+|49    |  \genblk1[52].filter_inst  |serial_filter_46 |    26|
+|50    |  \genblk1[53].filter_inst  |serial_filter_47 |    26|
+|51    |  \genblk1[54].filter_inst  |serial_filter_48 |    26|
+|52    |  \genblk1[55].filter_inst  |serial_filter_49 |    51|
+|53    |  \genblk1[56].filter_inst  |serial_filter_50 |    26|
+|54    |  \genblk1[57].filter_inst  |serial_filter_51 |    27|
+|55    |  \genblk1[58].filter_inst  |serial_filter_52 |    27|
+|56    |  \genblk1[59].filter_inst  |serial_filter_53 |    75|
+|57    |  \genblk1[5].filter_inst   |serial_filter_54 |    26|
+|58    |  \genblk1[60].filter_inst  |serial_filter_55 |    27|
+|59    |  \genblk1[61].filter_inst  |serial_filter_56 |    34|
+|60    |  \genblk1[62].filter_inst  |serial_filter_57 |    29|
+|61    |  \genblk1[63].filter_inst  |serial_filter_58 |    52|
+|62    |  \genblk1[6].filter_inst   |serial_filter_59 |    26|
+|63    |  \genblk1[7].filter_inst   |serial_filter_60 |    50|
+|64    |  \genblk1[8].filter_inst   |serial_filter_61 |    26|
+|65    |  \genblk1[9].filter_inst   |serial_filter_62 |    26|
++------+----------------------------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:31 . Memory (MB): peak = 551.867 ; gain = 343.395
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 551.867 ; gain = 321.191
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:31 . Memory (MB): peak = 551.867 ; gain = 343.395
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 27 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+25 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:46 . Memory (MB): peak = 593.066 ; gain = 367.066
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.280 . Memory (MB): peak = 593.066 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 14 13:43:42 2017...

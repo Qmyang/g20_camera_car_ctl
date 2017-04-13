@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# updatemem v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# 
+# Start of session at: Fri Mar 17 14:28:46 2017
+# Process ID: 6060
+# Current directory: F:/image_filter
+# Command line: updatemem.exe -mode batch -source F:/ECE532/SDK/2016.2/scripts/updatemem/main.tcl -notrace -tclargs -meminfo F:/image_filter_with_vga/image_filter_test_bench.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.mmi -data F:/ECE532/SDK/2016.2/data/embeddedsw/lib/microblaze/mb_bootloop_le.elf -proc design_1_i/microblaze_0 -bit F:/image_filter_with_vga/image_filter_test_bench.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit -out F:/image_filter_with_vga/image_filter_test_bench.sdk/design_1_wrapper_hw_platform_0/download.bit -force
+# Log file: F:/image_filter/updatemem.log
+# Journal file: F:/image_filter\updatemem.jou
+#-----------------------------------------------------------
+source F:/ECE532/SDK/2016.2/scripts/updatemem/main.tcl -notrace
+Loading bitfile F:/image_filter_with_vga/image_filter_test_bench.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+Loading data files...
+Updating memory content...
+Creating bitstream...
+Writing bitstream F:/image_filter_with_vga/image_filter_test_bench.sdk/design_1_wrapper_hw_platform_0/download.bit...
+update_mem: Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 472.473 ; gain = 420.938
+INFO: [Common 17-206] Exiting updatemem at Fri Mar 17 14:29:03 2017...

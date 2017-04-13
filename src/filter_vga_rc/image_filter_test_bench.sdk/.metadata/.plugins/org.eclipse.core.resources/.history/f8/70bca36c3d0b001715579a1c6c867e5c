@@ -1,0 +1,176 @@
+
+/*
+ * main.c
+ *
+ *  Created on: Feb 27, 2017
+ *      Author: Qmyang
+ */
+
+#include <stdio.h>
+//#include "platform.h"
+#include "xparameters.h"
+// Read/Write 16384 words or 64kB
+#define TEST_SIZE 16384
+#define red(pixel) ((pixel & 0xff0000) >> 16)
+#define green(pixel) ((pixel & 0xff00) >> 8)
+#define blue(pixel) (pixel & 0xff)
+
+#define OUTPUT 0
+// Pointer to the external memory
+volatile unsigned int * memptr = (unsigned int*) XPAR_MIG_7SERIES_0_BASEADDR;
+// Thomas Wang's 32-bit mix hash
+
+#define DISPLAY_COLUMNS  640
+#define DISPLAY_ROWS     480
+
+// VDMA (VGA)
+volatile unsigned int * VDMA_VGA    = (unsigned int *)0x44A30000;
+volatile unsigned int * VDMA_VGA_CR = (unsigned int *)0x44A30000;
+volatile unsigned int * VDMA_VGA_AD = (unsigned int *)0x44A3005C;
+volatile unsigned int * VDMA_VGA_ST = (unsigned int *)0x44A30058;
+volatile unsigned int * VDMA_VGA_HS = (unsigned int *)0x44A30054;
+volatile unsigned int * VDMA_VGA_VS = (unsigned int *)0x44A30050;
+//
+// VDMA (FB_IN)
+volatile unsigned int * VDMA_FB_IN    = (unsigned int *)0x44A10000;
+volatile unsigned int * VDMA_FB_IN_CR = (unsigned int *)0x44A10000;
+volatile unsigned int * VDMA_FB_IN_AD = (unsigned int *)0x44A1005C;
+volatile unsigned int * VDMA_FB_IN_ST = (unsigned int *)0x44A10058;
+volatile unsigned int * VDMA_FB_IN_HS = (unsigned int *)0x44A10054;
+volatile unsigned int * VDMA_FB_IN_VS = (unsigned int *)0x44A10050;
+
+
+// VDMA (FB_OUT)
+volatile unsigned int * VDMA_FB_OUT    = (unsigned int *)0x44A20000;
+volatile unsigned int * VDMA_FB_OUT_CR = (unsigned int *)0x44A20030;
+volatile unsigned int * VDMA_FB_OUT_AD = (unsigned int *)0x44A200AC;
+volatile unsigned int * VDMA_FB_OUT_ST = (unsigned int *)0x44A200A8;
+volatile unsigned int * VDMA_FB_OUT_HS = (unsigned int *)0x44A200A4;
+volatile unsigned int * VDMA_FB_OUT_VS = (unsigned int *)0x44A200A0;
+
+//image filter
+volatile unsigned int * filter_ctl    = (unsigned int *)0x44A00000;
+
+struct coordinate {
+	unsigned int x;
+	unsigned int y;
+};
+
+volatile unsigned int * switches = (unsigned int *) 0x40000000;
+int main()
+{
+	unsigned int i, j, ii, jj;
+	unsigned int (*fb_in)[640] = memptr;
+	unsigned int (*fb_out)[640] = 0x81000000;
+	int switch_value = 0;
+	int r,g,b;
+	int marker_size = 0;
+	struct coordinate coords = {0};
+
+
+//	for (i = 0; i < 480; i++) {
+//		for (j = 0; j < 640; j++){
+//			if (j < 320 && i < 240)
+//				fb_in[i][j] = 0xffffffff;
+//			else if (j >=320 && i < 240)
+//				fb_in[i][j] = 0xffff0000;
+//			else if (j <320 && i >= 240)
+//				fb_in[i][j] = 0xffff0000;
+//			else
+//				fb_in[i][j] = 0xffffffff;
+//		}
+//	}
+//
+	for (i = 0; i < 480; i++) {
+		for (j = 0; j < 640; j++){
+			fb_out[i][j] = 0;
+		}
+	}
+
+//	for (i = 0; i < 480; i+= 10) {
+//		for (j = 0; j < 640; j+=10) {
+//			unsigned int min = 0xffffffff;
+//			for (ii = i; ii < i +10; ii++){
+//				for (jj = j; jj < j +10; jj++){
+//					if (fb_in[ii][jj] < min)
+//						min = fb_in[ii][jj];
+//				}
+//			}
+//			fb_out[i/10][j/10] = min;
+//		}
+//	}
+
+
+
+
+	*(VDMA_VGA_CR) = 0x1;			// Enable VDMA
+	*(VDMA_VGA_AD) = (unsigned int)fb_in;		// The base address of the frame buffer
+	*(VDMA_VGA_ST) = 2560;			// Line size (stride value)
+	*(VDMA_VGA_HS) = 4*DISPLAY_COLUMNS;	// Horizontal Pixel Count * 4B/pixel
+	*(VDMA_VGA_VS) = DISPLAY_ROWS;		// Vertical Line Count
+
+	*(VDMA_FB_IN_CR) = 0x1;			// Enable VDMA
+	*(VDMA_FB_IN_AD) = (unsigned int)fb_in;		// The base address of the frame buffer
+	*(VDMA_FB_IN_ST) = 2560;			// Line size (stride value)
+	*(VDMA_FB_IN_HS) = 4*DISPLAY_COLUMNS;	// Horizontal Pixel Count * 4B/pixel
+	*(VDMA_FB_IN_VS) = DISPLAY_ROWS;		// Vertical Line Count
+
+
+
+	*(VDMA_FB_OUT_CR) = 0x1;			// Enable VDMA
+	*(VDMA_FB_OUT_AD) = (unsigned int)fb_out;		// The base address of the frame buffer
+
+#if OUTPUT
+	*(VDMA_FB_OUT_ST) = 2560;			// Line size (stride value)
+#else
+	*(VDMA_FB_OUT_ST) = 256;			// Line size (stride value)
+#endif
+	*(VDMA_FB_OUT_HS) = 4*64;	// Horizontal Pixel Count * 4B/pixel
+	*(VDMA_FB_OUT_VS) = 48;		// Vertical Line Count
+
+	*filter_ctl = 1;		//enable filter
+
+#if !OUTPUT
+	for (i = 0; i < 48; i++) {
+		for (j = 0; j < 64; j++){
+			volatile unsigned int pixel = fb_out[i][j];
+			r = red(fb_out[i][j]);
+			g = green(fb_out[i][j]);
+			b = blue(fb_out[i][j]);
+			if ( r > 80 && b < 70 && g < 70) {
+				marker_size += 1;
+				if (marker_size > 1) {
+					coords.x = i;
+					coords.y = j;
+					break;
+				}
+			}
+		}
+	}
+
+	*filter_ctl = 0;
+#else
+
+	switch_value = *switches & 1;
+	while (1) {
+		i = i + 1;
+		if ((*switches & 0x1) == switch_value)
+			continue;
+
+		switch_value = *switches & 1;
+		*(VDMA_VGA_CR) = 0x0;
+
+		*(VDMA_VGA_CR) = 0x1;
+		if(*switches & 0x1)
+			*(VDMA_VGA_AD) = (unsigned int)fb_out;
+		else
+			*(VDMA_VGA_AD) = (unsigned int)fb_in;
+		*(VDMA_VGA_ST) = 2560;			// Line size (stride value)
+		*(VDMA_VGA_HS) = 4*DISPLAY_COLUMNS;	// Horizontal Pixel Count * 4B/pixel
+		*(VDMA_VGA_VS) = DISPLAY_ROWS;		// Vertical Line Count
+
+	}
+#endif
+}
+
+

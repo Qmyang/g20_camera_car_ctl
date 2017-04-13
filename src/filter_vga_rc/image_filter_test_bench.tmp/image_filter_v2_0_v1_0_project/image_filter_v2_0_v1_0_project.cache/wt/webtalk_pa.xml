@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Wed Mar 15 00:48:04 2017">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="c5d7952445514371926c3b1a25c7732e" type="ProjectID"/>
+<property name="ProjectIteration" value="1" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="AutoConnectTarget" value="1" type="JavaHandler"/>
+<property name="CloseProject" value="1" type="JavaHandler"/>
+<property name="EditInIPPackagerHandler" value="1" type="JavaHandler"/>
+<property name="NewExportHardware" value="1" type="JavaHandler"/>
+<property name="OpenBlockDesign" value="1" type="JavaHandler"/>
+<property name="OpenHardwareManager" value="1" type="JavaHandler"/>
+<property name="OpenRecentTarget" value="1" type="JavaHandler"/>
+<property name="RunTrigger" value="3" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="PAResourceAtoD.AddIlaProbesPopup_OK, OK" value="4" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, Auto Connect" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER, Edit in IP Packager" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_EXPORT_HARDWARE, Export Hardware..." value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, impl_1 ; constrs_1 ; Running opt_design... ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Wed Mar 15 00:10:00 EDT 2017 ; 00:00:48 ; Vivado Implementation Defaults (Vivado Implementation 2016" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, impl_1 ; constrs_1 ; Running route_design... ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Wed Mar 15 00:10:00 EDT 2017 ; 00:17:36 ; Vivado Implementation Defaults (Vivado Implementation 2016" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, impl_1 ; constrs_1 ; Running route_design... ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Wed Mar 15 00:10:00 EDT 2017 ; 00:20:12 ; Vivado Implementation Defaults (Vivado Implementation 2016" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, synth_1 ; constrs_1 ; synth_design Complete! ;  ;  ;  ;  ;  ;  ; 20169 ; 19723 ; 10 ; 0 ; 0 ; Tue Mar 14 22:12:09 EDT 2017 ; 00:27:06 ; Vivado Synthesis Defaults (Vivado Synthesis 2016" value="4" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, IP Integrator, Open Block Design], 7, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Program and Debug, Open Hardware Manager, Open Target], 39, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_FOR_THIS_ILA_CORE, Waveform Viewer_run_trigger" value="2" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_EXPORT, Export" value="2" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_FILE, File" value="2" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_IMPORT, Import" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, Open Recent File" value="3" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_OPEN_RECENT_IP_LOCATION, Open Recent IP Location" value="3" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProbesView_PROBES_TREE, [root, design_1_i/axi_vdma_0_M_AXIS_MM2S_TDATA[31:0]], 0, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProbesView_PROBES_TREE, [root, design_1_i/axi_vdma_1_M_AXI_S2MM_AWREADY], 7, false, false, true, false, false, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProbesView_PROBES_TREE, [root, design_1_i/axi_vdma_1_M_AXI_S2MM_AWVALID], 9, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProbesView_PROBES_TREE, [root, design_1_i/axis_data_fifo_1_M_AXIS_TDATA[31:0]], 13, false, false, true, false, false, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProbesView_PROBES_TREE, [root, design_1_i/axis_data_fifo_1_M_AXIS_TREADY], 14, false" value="2" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProbesView_PROBES_TREE, [root, design_1_i/axis_data_fifo_2_M_AXIS_TDATA[31:0]], 15, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProbesView_PROBES_TREE, [root, design_1_i/axis_data_fifo_2_M_AXIS_TDATA[31:0]], 15, false, false, true, false, false, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProbesView_PROBES_TREE, [root, design_1_i/axis_data_fifo_2_M_AXIS_TREADY], 17, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProbesView_PROBES_TREE, [root, design_1_i/image_filter_v2_0_0_pixel_out[23:0]], 20, false, false, true, false, false, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProbesView_PROBES_TREE, [root, design_1_i/image_filter_v2_0_0_pixel_out_valid], 21, false" value="2" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProbesView_PROBES_TREE, [root, u_ila_0_axis_data_fifo_1_M_AXIS_TVALID], 28, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, IP Documentation" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SystemBuilderView_ORIENTATION, Orientation" value="1" type="GuiResourceData"/>
+<property name="PAResourceTtoZ.TriggerStatusPanel_RUN_TRIGGER_FOR_THIS_ILA_CORE, ILA_run_trigger" value="1" type="GuiResourceData"/>
+<property name="PAResourceTtoZ.TsmEditorPanel_INSERT_PROBE, Code_new" value="1" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_CANCEL, Cancel" value="1" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_OK, OK" value="3" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 255, 52" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 256, 22" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 288, 147" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 323, 132" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 324, 134" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 343, 134" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 365, 134" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 367, 25" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 378, 299" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 385, 134" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 395, 299" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 396, 134" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 427, 297" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 440, 297" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 442, 183" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 464, 340" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 479, 341" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 503, 32" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, axi_vdma_1_M_AXI_S2MM_AWREADY], 2, false" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, axi_vdma_1_M_AXI_S2MM_AWREADY], 8, false, true, false, false, false, false" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, axi_vdma_1_M_AXI_S2MM_AWVALID], 7, false" value="2" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, design_1_i/axi_vdma_1_M_AXI_S2MM_WDATA[31:0]], 0, true" value="2" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, design_1_i/axis_data_fifo_2_M_AXIS_TDATA[31:0]], 5, true" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, design_1_i/image_filter_top_0_fsync], 1, false" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, design_1_i/image_filter_top_0_fsync], 3, false" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformView_ADD, Waveform Viewer_new" value="3" type="GuiResourceData"/>
+<property name="Trigger State Machine, 193, 41" value="1" type="GuiResourceData"/>
+<property name="Trigger State Machine, 236, 30" value="1" type="GuiResourceData"/>
+<property name="Trigger State Machine, 245, 39, false, true, false, false, false" value="1" type="GuiResourceData"/>
+<property name="Trigger State Machine, 263, 53" value="1" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="39" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="31" type="TclMode"/>
+</item>
+</section>
+</application>
+</document>

@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Fri Mar 17 00:58:31 2017
+# Process ID: 5960
+# Current directory: F:/image_filter_with_vga
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6448 F:\image_filter_with_vga\image_filter_test_bench.xpr
+# Log file: F:/image_filter_with_vga/vivado.log
+# Journal file: F:/image_filter_with_vga\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/image_filter_with_vga/image_filter_test_bench.xpr
+update_compile_order -fileset sources_1
+launch_sdk -workspace F:/image_filter_with_vga/image_filter_test_bench.sdk -hwspec F:/image_filter_with_vga/image_filter_test_bench.sdk/design_1_wrapper.hdf
+launch_sdk -workspace F:/image_filter_with_vga/image_filter_test_bench.sdk -hwspec F:/image_filter_with_vga/image_filter_test_bench.sdk/design_1_wrapper.hdf
+launch_sdk -workspace F:/image_filter_with_vga/image_filter_test_bench.sdk -hwspec F:/image_filter_with_vga/image_filter_test_bench.sdk/design_1_wrapper.hdf

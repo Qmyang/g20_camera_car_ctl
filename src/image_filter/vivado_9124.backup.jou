@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Sun Feb 26 21:20:02 2017
+# Process ID: 9124
+# Current directory: F:/ECE532/projects/test_bench_demo/image_filter
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3656 F:\ECE532\projects\test_bench_demo\image_filter\image_filter.xpr
+# Log file: F:/ECE532/projects/test_bench_demo/image_filter/vivado.log
+# Journal file: F:/ECE532/projects/test_bench_demo/image_filter\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/ECE532/projects/test_bench_demo/image_filter/image_filter.xpr
+update_compile_order -fileset sources_1
